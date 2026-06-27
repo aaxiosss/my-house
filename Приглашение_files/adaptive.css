@@ -182,11 +182,7 @@
         max-width: 380px;
     }
 
-.najimai {
-        top: auto;          /* сбрасываем top, если был */
-        bottom: 10px;       /* подберите нужное значение */
-        
-    }
+
 
 
     .invite {
