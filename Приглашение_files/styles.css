@@ -105,24 +105,24 @@
 
 .open-btn {
     position: relative;
-    width: 70px; /* Задайте нужный размер */
-    height: 70px;
+    width: 100px; /* Задайте нужный размер */
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .pulse-heart {
-    width: 80px; /* Размер сердечка */
-    height: 80px;
+    width: 50px; /* Размер сердечка */
+    height: 50px;
     animation: heartPulse 1s infinite;
     z-index: 2;
 }
 
 .pulse-circle {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color: rgba(255, 253, 253, 0.3);
     animation: circlePulse 2s infinite;
@@ -169,7 +169,7 @@
 }
 
 .open-btn img {
-    width: 70px;
+    width: 100px;
 }
 
 @keyframes fadeInScale {
