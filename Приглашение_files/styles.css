@@ -232,7 +232,7 @@ white-space: nowrap;        /* запрещает перенос по слова
 }
 
 .invite .invite-name {
-    font-size: 28px;
+    font-size: 18px;
     text-align: center;
     z-index: 2;
     position: relative;
