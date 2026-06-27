@@ -107,7 +107,7 @@
     position: relative;
     width: 30px; /* Задайте нужный размер */
     height: 30px;
-    margin-left: -30px;   /* сдвиг влево (положительное значение — вправо, отрицательное — влево) */
+    margin-left: -100px;   /* сдвиг влево (положительное значение — вправо, отрицательное — влево) */
     margin-top: 20px;    /* сдвиг вниз */
     display: flex;
     align-items: center;
