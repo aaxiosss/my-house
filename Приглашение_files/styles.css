@@ -103,9 +103,14 @@
     animation: fadeInScale 1s ease-out forwards;
 }
 .najimai {
-    position: relative;
-    z-index: 1;
-    /*background: rgba(0, 0, 0, 0.3); !* Затемнённый фон для текста *!*/
+    position: absolute;
+    bottom: 100px;          /* отступ от нижнего края – регулируйте */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;    /* ширина по содержимому, чтобы центрировалось */
+    z-index: 1;            /* повыше, чтобы не перекрывался другими элементами */
+    /* все остальные свойства оставляем без изменений */
     padding: 70px;
     border-radius: 10px;
     display: flex;
