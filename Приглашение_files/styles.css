@@ -102,7 +102,24 @@
     filter: blur(10px);
     animation: fadeInScale 1s ease-out forwards;
 }
+.najimai {
+    position: relative;
+    z-index: 1;
+    /*background: rgba(0, 0, 0, 0.3); !* Затемнённый фон для текста *!*/
+    padding: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+    font-family: "Felidae", sans-serif;
+    
+opacity: 0;
+    transform: scale(0.8);
+    filter: blur(10px);
+    animation: fadeInScale 1s ease-out forwards;
+}
 .open-btn {
     position: relative;
     width: 37px; /* Задайте нужный размер */
