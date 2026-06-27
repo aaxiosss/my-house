@@ -214,6 +214,13 @@ white-space: nowrap;        /* запрещает перенос по слова
     }
 }
 
+.background-wrapper {
+    background-image: url("images/2fon.jpg"); /* путь к вашей картинке */
+    background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
+    background-position: center;     /* центрирует изображение */
+    background-repeat: no-repeat;    /* не повторяет */
+}
+
 .invite {
     background-image: url("images/background.jpeg");
     display: flex;
