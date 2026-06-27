@@ -132,8 +132,8 @@ white-space: nowrap;        /* запрещает перенос по слова
 }
 .open-btn {
     position: relative;
-    width: 37px; /* Задайте нужный размер */
-    height: 37px;
+    width: 50px; /* Задайте нужный размер */
+    height: 50px;
     margin-left: -55px;   /* сдвиг влево (положительное значение — вправо, отрицательное — влево) */
     margin-top: -35px;    /* сдвиг вниз */
     display: flex;
@@ -142,16 +142,16 @@ white-space: nowrap;        /* запрещает перенос по слова
 }
 
 .pulse-heart {
-    width: 50px; /* Размер сердечка */
-    height: 50px;
+    width: 63px; /* Размер сердечка */
+    height: 63px;
     animation: heartPulse 1s infinite;
     z-index: 2;
 }
 
 .pulse-circle {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: rgba(255, 253, 253, 0.3);
     animation: circlePulse 1s infinite;
