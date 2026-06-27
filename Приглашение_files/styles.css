@@ -88,6 +88,10 @@
 
 .razblock.open {
     position: absolute;
+    white-space: nowrap; /* тогда <br> будет работать, а пробелы не переносятся */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     bottom: -250px;        /* расстояние от нижнего края экрана */
     left: 6px;          /* сдвиг влево (можно подобрать) */
     margin: 0;           /* убираем старые отступы */
