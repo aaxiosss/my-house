@@ -1,0 +1,554 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 950px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .invite {
+
+        padding: 40px 0 0 0;
+    }
+
+    .invite .invite-name {
+        font-size: 70px;
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+
+    .data-text {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .main {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .main-info {
+        color: #f8efea;
+        font-size: 36px;
+    }
+
+    .main .no-fonts {
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+        max-width: 650px;
+    }
+
+    .main-info-location a {
+        font-size: 22px;
+    }
+
+    .program-title p {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .program-title p:not(.fonts) {
+        font-size: 30px;
+    }
+
+    .event .time {
+        font-size: 36px;
+    }
+
+    .event .description {
+        font-size: 30px;
+    }
+
+    .event .text {
+        font-size: 22px;
+    }
+
+
+    .organizer-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .organizer-text {
+        font-size: 30px;
+    }
+
+    .organizer-name {
+        font-size: 30px;
+    }
+
+    .organizer-phone {
+        font-size: 36px;
+    }
+
+    .organizer a {
+        font-size: 22px;
+        text-decoration: none;
+        outline: none;
+        color: #f8efea;
+        border: 2px solid #f8efea;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 15px;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .dresscode .container {
+
+    }
+
+    .dresscode-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+
+    }
+
+    .dresscode-info-text {
+        font-size: 30px;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .dresscode-info-block {
+        width: 130px;
+        height: 100px;
+    }
+
+    .wishes-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+
+    .wishes-text {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .presence-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .presence-text {
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+@media (max-width: 625px) {
+    .container {
+        max-width: 520px;
+    }
+
+
+
+    .invite .invite-name {
+        font-size: 48px;
+        max-width: 520px;
+        margin-bottom: 20px;
+    }
+    .invite img {
+        top: -201px;
+        left: -262px;
+    }
+    .date-image img {
+        display: block;
+        max-width: 90%;
+    }
+
+    .dresscode-info-block {
+        width: 80px;
+        height: 70px;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 380px;
+    }
+
+    .invite {
+        overflow: hidden;
+    }
+
+
+
+    .invite .invite-name {
+        font-size: 40px;
+        max-width: 380px;
+    }
+
+    .date {
+        padding-bottom: 100px;
+    }
+
+    .data-text {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .main {
+        padding: 70px 0 70px 0;
+    }
+
+    .main-info {
+        font-size: 23px;
+    }
+
+    .main .no-fonts {
+        font-size: 20px;
+        max-width: 380px;
+    }
+
+    .main-info-location a {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .main-info-location p:not(.fonts) {
+        font-size: 20px;
+    }
+
+    .dear {
+        font-size: 36px;
+    }
+
+
+    .program-title p:not(.fonts) {
+        font-size: 22px;
+    }
+
+
+    .organizer {
+        padding: 70px 0 70px 0;
+    }
+
+    .organizer-text {
+        font-size: 28px;
+    }
+
+
+    .organizer-name {
+        font-size: 28px;
+    }
+
+
+    .dresscode {
+        padding: 70px 0 70px 0;
+    }
+
+    .dresscode-info-text {
+        max-width: 380px;
+    }
+
+    .dresscode-info-block {
+        width: 70px;
+        height: 56px;
+    }
+
+
+    .wishes {
+        padding: 70px 0 70px 0;
+    }
+
+    .wishes-text {
+        font-size: 28px;
+    }
+
+
+    .presence {
+        padding: 70px 0 70px 0;
+    }
+
+    .presence-text {
+        font-size: 28px;
+    }
+
+    .timout-title {
+        font-size: 36px;
+        color: #003d4f;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .invite {
+        overflow: hidden;
+    }
+
+
+
+    .invite .invite-name {
+        max-width: 300px;
+    }
+
+    .date {
+        padding-bottom: 70px;
+    }
+    .date-image img {
+        display: block;
+        max-width: 100%;
+    }
+
+    .data-text {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main {
+        padding: 70px 0 70px 0;
+    }
+
+    .main-info {
+        font-size: 23px;
+    }
+
+    .main .no-fonts {
+        font-size: 20px;
+        max-width: 300px;
+    }
+
+    .main-info-location a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .main-info-location p:not(.fonts) {
+        font-size: 20px;
+    }
+
+    .dear {
+        font-size: 36px;
+    }
+    .program-title p {
+        text-align: center;
+    }
+
+    .event .text {
+        font-size: 16px;
+    }
+
+
+    .organizer-text {
+        font-size: 22px;
+    }
+
+    .organizer-phone {
+        font-size: 28px;
+    }
+
+
+    .dresscode {
+        padding: 70px 0 70px 0;
+    }
+
+    .dresscode-info-text {
+        max-width: 300px;
+        font-size: 22px;
+    }
+
+
+
+    .dresscode-info-block {
+        width: 70px;
+        height: 56px;
+    }
+
+
+    .wishes-text {
+        font-size: 22px;
+    }
+    .wedding-form {
+        font-size: 22px;
+    }
+    .des {
+        font-size: 16px;
+    }
+
+    .presence-text {
+        font-size: 22px;
+    }
+
+    .timout-title {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 280px;
+    }
+
+
+
+    .invite .invite-name {
+        font-size: 36px;
+        max-width: 280px;
+        margin-bottom: 0;
+    }
+
+    .date {
+        padding-bottom: 50px;
+    }
+
+    .date-time {
+        font-size: 56px;
+    }
+
+    .data-text {
+        font-size: 28px;
+    }
+
+    .main {
+        padding: 50px 0 50px 0;
+    }
+
+
+    .main .no-fonts {;
+        max-width: 280px;
+    }
+
+    .dear {
+        font-size: 28px;
+    }
+
+    .main-info-location a {
+        font-size: 16px;
+    }
+
+
+    .program-title {
+        padding: 50px 0 50px 0;
+    }
+
+    .program-title p {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .organizer {
+        padding: 50px 0 50px 0;
+    }
+
+    .organizer-text {
+        font-size: 22px;
+    }
+
+    .organizer-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .organizer-name {
+        font-size: 28px;
+    }
+
+    .organizer-phone {
+        font-size: 30px;
+    }
+
+    .program {
+        padding: 50px 0 50px 0;
+    }
+
+    .event {
+        gap: 20px;
+    }
+
+    .event .description {
+        font-size: 28px;
+    }
+
+    .event .time {
+        font-size: 24px;
+    }
+
+    .event .text {
+        font-size: 16px;
+    }
+
+    .dresscode {
+        padding: 50px 0 50px 0;
+    }
+
+    .dresscode-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .dresscode-info-text {
+        font-size: 22px;
+        max-width: 280px;
+    }
+
+    .dresscode-info-block {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .wishes {
+        padding: 50px 0 50px 0;
+    }
+
+    .wishes-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .wishes-text {
+        font-size: 22px;
+    }
+
+
+    .presence {
+        padding: 50px 0 50px 0;
+    }
+
+    .presence-text {
+        font-size: 22px;
+    }
+
+    .presence-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .wedding-form {
+        font-size: 22px;
+    }
+    .des {
+        font-size: 16px;
+    }
+    .timout {
+        padding: 20px 0 20px 0;
+    }
+    .timout-title {
+        font-size: 30px;
+    }
+
+}
