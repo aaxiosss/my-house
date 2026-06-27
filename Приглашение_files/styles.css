@@ -104,9 +104,8 @@
     animation: fadeInScale 1s ease-out forwards;
 }
 .najimai {
-    position: absolute;
-    top: 500px;
-    bottom: 10px;          /* отступ от нижнего края – регулируйте */
+    position: fixed;
+    bottom: 30px;          /* отступ от нижнего края – регулируйте */
     left: 0;
     right: 0;
     margin: 0 auto;
