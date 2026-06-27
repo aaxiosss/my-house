@@ -108,7 +108,7 @@
     width: 37px; /* Задайте нужный размер */
     height: 37px;
     margin-left: -55px;   /* сдвиг влево (положительное значение — вправо, отрицательное — влево) */
-    margin-top: -35px;    /* сдвиг вниз */
+    margin-top: 17px;    /* сдвиг вниз */
     display: flex;
     align-items: center;
     justify-content: center;
