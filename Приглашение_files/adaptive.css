@@ -301,6 +301,7 @@
 
 
     .invite .invite-name {
+        font-size: 23px;
         max-width: 300px;
     }
 
@@ -405,7 +406,7 @@
 
 
     .invite .invite-name {
-        font-size: 36px;
+        font-size: 16px;
         max-width: 280px;
         margin-bottom: 0;
     }
