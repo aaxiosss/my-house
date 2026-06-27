@@ -105,6 +105,7 @@
 }
 .najimai {
     position: absolute;
+    top: 500px;
     bottom: 10px;          /* отступ от нижнего края – регулируйте */
     left: 0;
     right: 0;
