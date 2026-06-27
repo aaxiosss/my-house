@@ -114,6 +114,12 @@
     justify-content: center;
 }
 
+.move-text {
+    display: inline-block;
+    margin-top: 450px;        /* сдвиг вниз */
+    margin-left: -63px;      /* сдвиг влево */
+}
+
 .pulse-heart {
     width: 50px; /* Размер сердечка */
     height: 50px;
