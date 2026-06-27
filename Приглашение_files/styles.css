@@ -132,8 +132,8 @@ white-space: nowrap;        /* запрещает перенос по слова
 }
 .open-btn {
     position: relative;
-    width: 65px; /* Задайте нужный размер */
-    height: 65px;
+    width: 105px; /* Задайте нужный размер */
+    height: 105px;
     margin-left: -55px;   /* сдвиг влево (положительное значение — вправо, отрицательное — влево) */
     margin-top: -35px;    /* сдвиг вниз */
     display: flex;
