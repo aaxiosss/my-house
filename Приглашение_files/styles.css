@@ -216,12 +216,10 @@ white-space: nowrap;        /* запрещает перенос по слова
 
 .invite {
     background-image: url("images/background.jpeg");
-    min-height: 100vh;            /* высота на весь экран */
-    padding: 20px 0;              /* небольшие отступы сверху/снизу */
     display: flex;
     justify-content: center;
     align-items: center;
-    /*padding: 200px 0 150px 0;*/
+    padding: 200px 0 150px 0;
     position: relative;
 }
 .invite img {
