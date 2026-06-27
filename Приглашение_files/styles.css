@@ -105,8 +105,8 @@
 
 .open-btn {
     position: relative;
-    width: 100px; /* Задайте нужный размер */
-    height: 100px;
+    width: 70px; /* Задайте нужный размер */
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,8 +121,8 @@
 
 .pulse-circle {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: rgba(255, 253, 253, 0.3);
     animation: circlePulse 2s infinite;
@@ -169,7 +169,7 @@
 }
 
 .open-btn img {
-    width: 100px;
+    width: 70px;
 }
 
 @keyframes fadeInScale {
