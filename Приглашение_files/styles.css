@@ -120,8 +120,8 @@
     position: relative;
     width: 37px; /* Задайте нужный размер */
     height: 37px;
-    margin-left: -68px;   /* сдвиг влево (положительное значение — вправо, отрицательное — влево) */
-    margin-top: -36px;    /* сдвиг вниз */
+    margin-left: -65px;   /* сдвиг влево (положительное значение — вправо, отрицательное — влево) */
+    margin-top: -34px;    /* сдвиг вниз */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,7 +197,7 @@
     from {
         opacity: 0;
         transform: scale(0.8);
-        filter: blur(10px);
+        filter: blur(0px);
     }
     to {
         opacity: 1;
