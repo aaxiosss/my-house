@@ -217,8 +217,6 @@ white-space: nowrap;        /* запрещает перенос по слова
 
 .invite {
     background-image: url("images/background.jpeg");
-    background-size: cover;          /* масштабирует картинку, чтобы покрыть всю область */
-    background-repeat: no-repeat;    /* убирает повторение */
     min-height: 100vh;            /* высота на весь экран */
     padding: 20px 0;              /* небольшие отступы сверху/снизу */
     display: flex;
