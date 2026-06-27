@@ -181,13 +181,14 @@
     .container {
         max-width: 380px;
     }
-    
- .najimai {
+}
+
+.najimai {
         top: auto;          /* сбрасываем top, если был */
         bottom: 30px;       /* подберите нужное значение */
         
     }
-}
+
 
     .invite {
         overflow: hidden;
