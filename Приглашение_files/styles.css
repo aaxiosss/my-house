@@ -113,8 +113,8 @@
 }
 
 .pulse-heart {
-    width: 20px; /* Размер сердечка */
-    height: 20px;
+    width: 80px; /* Размер сердечка */
+    height: 80px;
     animation: heartPulse 1s infinite;
     z-index: 2;
 }
