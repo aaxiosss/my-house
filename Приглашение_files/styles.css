@@ -105,10 +105,10 @@
 
 .open-btn {
     position: relative;
-    width: 30px; /* Задайте нужный размер */
-    height: 30px;
-    margin-left: -100px;   /* сдвиг влево (положительное значение — вправо, отрицательное — влево) */
-    margin-top: 20px;    /* сдвиг вниз */
+    width: 37px; /* Задайте нужный размер */
+    height: 37px;
+    margin-left: -63px;   /* сдвиг влево (положительное значение — вправо, отрицательное — влево) */
+    margin-top: 47px;    /* сдвиг вниз */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,11 +123,11 @@
 
 .pulse-circle {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: rgba(255, 253, 253, 0.3);
-    animation: circlePulse 2s infinite;
+    animation: circlePulse 1s infinite;
     z-index: 1;
 }
 
@@ -171,7 +171,7 @@
 }
 
 .open-btn img {
-    width: 30px;
+    width: 37px;
 }
 
 @keyframes fadeInScale {
