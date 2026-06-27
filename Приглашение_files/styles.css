@@ -216,10 +216,14 @@ white-space: nowrap;        /* запрещает перенос по слова
 
 .invite {
     background-image: url("images/background.jpeg");
+    background-size: cover;          /* масштабирует картинку, чтобы покрыть всю область */
+    background-repeat: no-repeat;    /* убирает повторение */
+    min-height: 100vh;            /* высота на весь экран */
+    padding: 20px 0;              /* небольшие отступы сверху/снизу */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 0 150px 0;
+    /*padding: 200px 0 150px 0;*/
     position: relative;
 }
 .invite img {
@@ -232,7 +236,7 @@ white-space: nowrap;        /* запрещает перенос по слова
 }
 
 .invite .invite-name {
-    font-size: 6px;
+    font-size: 8px;
     text-align: center;
     z-index: 2;
     position: relative;
