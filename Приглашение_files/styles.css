@@ -222,7 +222,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     align-items: center;      /* выравнивание по вертикали */
  font-family: "Poiret One", sans-serif; /*шрифт*/
     color: #002D39; /*цвет*/
-    padding: 200px 0 200px 0;
+    padding: 162px 0 162px 0;
    
     
     background-color: black;          /* запасной фон */
@@ -312,7 +312,7 @@ white-space: nowrap;        /* запрещает перенос по слова
 background-image: url("3fon.png");
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
     background-repeat: no-repeat;    /* не повторяет */
-    padding: 200px 0 200px 0;
+    padding: 162px 0 162px 0;
     position: relative;
     overflow: hidden;
 
