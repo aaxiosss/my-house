@@ -221,8 +221,8 @@ white-space: nowrap;        /* запрещает перенос по слова
     justify-content: center;  /* выравнивание по горизонтали */
     align-items: center;      /* выравнивание по вертикали */
 
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     
     background-color: black;          /* запасной фон */
     background-image: url("2fon.png"); /* путь к вашей картинке */
