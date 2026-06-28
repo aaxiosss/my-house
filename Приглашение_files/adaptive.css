@@ -9,7 +9,10 @@
     .container {
         max-width: 600px;
     }
-
+.background-wrapper {
+padding: 384px 0 384px 0;
+    
+}
     .invite {
 
         padding: 40px 0 0 0;
@@ -27,8 +30,7 @@
     }
 
     .main {
-        padding-right: 10px;
-        padding-left: 10px;
+       padding: 384px 0 384px 0;
     }
 
     .main-info {
@@ -152,8 +154,13 @@
     .container {
         max-width: 520px;
     }
-
-
+.background-wrapper {
+padding: 310px 0 310px 0;
+    
+}
+.main {
+       padding: 310px 0 310px 0;
+    }
 
     .invite .invite-name {
         font-size: 30px;
@@ -181,7 +188,11 @@
     .container {
         max-width: 380px;
     }
-
+    
+.background-wrapper {
+padding: 212px 0 212px 0;
+    
+}
     .invite {
         overflow: hidden;
     }
@@ -203,7 +214,7 @@
     }
 
     .main {
-        padding: 70px 0 70px 0;
+        padding: 212px 0 212px 0;
     }
 
     .main-info {
