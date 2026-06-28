@@ -124,7 +124,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     font-family: "Felidae", sans-serif;
     color: #002D39;
     font-weight: 500;
-    font-family: "Poiret One", sans-serif;
+   
     
     opacity: 0;
     transform: scale(0.8);
@@ -220,7 +220,8 @@ white-space: nowrap;        /* запрещает перенос по слова
     display: flex;
     justify-content: center;  /* выравнивание по горизонтали */
     align-items: center;      /* выравнивание по вертикали */
-
+ font-family: "Poiret One", sans-serif; /*шрифт*/
+    color: #002D39; /*цвет*/
     padding: 70px 0 70px 0;
    
     
