@@ -312,8 +312,7 @@ white-space: nowrap;        /* запрещает перенос по слова
 background-image: url("3fon.png");
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
     background-repeat: no-repeat;    /* не повторяет */
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 200px 0 200px 0;
     position: relative;
     overflow: hidden;
 
