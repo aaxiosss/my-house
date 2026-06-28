@@ -306,10 +306,10 @@ white-space: nowrap;        /* запрещает перенос по слова
 }
 
 .main {
-
+    background-color: #003d4f;
+    
 background-image: url("3fon.png");
     
-    background-color: #003d4f;
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
