@@ -326,24 +326,24 @@ background-image: url("3fon.png");
     rotate: 243deg;
     opacity: 0.4;
 }
-.main-info {
+/*.main-info {
     color: #f8efea;
     font-size: 65px;
-}
-.main .no-fonts {
+}*/
+/*.main .no-fonts {
     font-size: 48px;
     margin: 20px 0 20px 0;
     max-width: 650px;
-}
-.main-info-location {
+}*/
+/*.main-info-location {
     margin-left: 30%;
     margin-top: 20px;
 
-}
-.main-info-location p:not(.fonts) {
+}*/
+/*.main-info-location p:not(.fonts) {
     font-size: 40px;
-}
-.main-info-location a {
+}*/
+/*.main-info-location a {
     font-size: 30px;
     text-decoration: none;
     outline: none;
@@ -355,8 +355,8 @@ background-image: url("3fon.png");
     display: inline-block;
     cursor: pointer;
     margin-top: 20px;
-}
-.main-info-location a:hover {
+}*/
+/*.main-info-location a:hover {
     color: #003d4f;
     background-color: #f8efea;
     border: 2px solid #f8efea;
@@ -366,9 +366,9 @@ background-image: url("3fon.png");
     display: inline-block;
     cursor: pointer;
 
-}
+}*/
 
-.program-title {
+/*.program-title {
     padding: 70px 0 70px 0;
     background-image: url("images/background.jpeg");
 }
