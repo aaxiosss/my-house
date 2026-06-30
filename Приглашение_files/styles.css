@@ -490,7 +490,7 @@ line-height: 1.4;
     transform: translateX(-50%);
     width: 70%;
     max-width: 400px;
-    z-index: 2;        /* выше картинок, но ниже текста? можно одинаково */
+    z-index: 6;        /* выше картинок, но ниже текста? можно одинаково */
     opacity: 1;
     transition: opacity 2.0s ease;
     pointer-events: none; /* чтобы клик проходил сквозь */
