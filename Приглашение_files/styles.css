@@ -216,21 +216,24 @@ white-space: nowrap;        /* запрещает перенос по слова
 }
 
 .background-wrapper {
-  
-    display: flex;
-    justify-content: center;  /* выравнивание по горизонтали */
-    align-items: center;      /* выравнивание по вертикали */
- font-family: "Poiret One", sans-serif; /*шрифт*/
-    color: #002D39; /*цвет*/
-    height: 100vh;            /* высота на весь экран */
-    min-height: 100vh;        /* гарантия для мобильных браузеров */
-    width: 100%;              /* ширина 100% */
-    background-position: center;
+
     background-color: pink;          /* запасной фон */
     background-image: url("2fon.png"); /* путь к вашей картинке */
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
+    background-position: center;
     background-repeat: no-repeat;    /* не повторяет */
+    width: 100%;              /* ширина 100% */
+    height: 100vh;            /* высота на весь экран */   
+    display: flex;
+    align-items: center;      /* выравнивание по вертикали */
+    justify-content: center;  /* выравнивание по горизонтали */
+    
+    font-family: "Poiret One", sans-serif; /*шрифт*/
+    color: #002D39; /*цвет*/
+   
+    min-height: 100vh;        /* гарантия для мобильных браузеров */
     box-sizing: border-box
+     
 }
 
 .invite {
