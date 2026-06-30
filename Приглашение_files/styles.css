@@ -41,18 +41,18 @@
 
 #preloader {
     touch-action: pan-y; /* или none, если не нужен даже вертикальный скролл */
-    background-color: black;          /* запасной фон */
+    background-color: pink;          /* запасной фон */
     background-image: url('fon.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* остальные свойства оставьте как были */
     position: fixed;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     color: white;
     font-size: 24px;
     font-family: Arial, sans-serif;
@@ -230,6 +230,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     background-image: url("2fon.png"); /* путь к вашей картинке */
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
     background-repeat: no-repeat;    /* не повторяет */
+    box-sizing: border-box
 }
 
 .invite {
