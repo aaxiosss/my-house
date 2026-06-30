@@ -428,15 +428,15 @@ white-space: nowrap;        /* запрещает перенос по слова
 
 .pulse-circle-suitcase {
     position: absolute;
-    width: 45px;
-    height: 45px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: rgba(255, 253, 253, 0.3);
     animation: circlePulse 1s infinite;
     z-index: 1;
     /* Расположение в нижнем левом углу */
-    bottom: 20px;
-    left: 20px;
+    bottom: 15%;
+    left: 15%;
     /* Изначально видим (поскольку на закрытом чемодане) */
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -453,19 +453,20 @@ white-space: nowrap;        /* запрещает перенос по слова
 /* Текст на закрытом чемодане */
 .suitcase-text {
     position: absolute;
-    top: 55%;          /* чуть ниже центра – регулируйте под свой макет */
+    top: 45%;          /* чуть ниже центра – регулируйте под свой макет */
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;    /* или другой контрастный цвет */
     font-family: "Caviar Dreams", sans-serif;
-    font-size: 2.5rem; /* можно в rem, чтобы адаптировалось */
+    font-size: 1.8rem; /* можно в rem, чтобы адаптировалось */
     text-align: center;
     white-space: nowrap; /* чтобы не переносился на две строки, если нужно */
     opacity: 0;         /* изначально скрыт */
     transition: opacity 0.5s ease;
     pointer-events: none; /* чтобы клик проходил сквозь текст на картинку */
     z-index: 2;        /* выше картинок, но ниже круга? можно выше, но круг z-index:1, зададим 2 */
-
+max-width: 80%;
+    
 }
 
 /* Когда чемодан закрыт (класс is-open отсутствует) – показываем текст */
