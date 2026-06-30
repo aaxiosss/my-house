@@ -41,7 +41,7 @@
 
 #preloader {
     touch-action: pan-y; /* или none, если не нужен даже вертикальный скролл */
-    background-color: pink;          /* запасной фон */
+    background-color: black;          /* запасной фон */
     background-image: url('fon.png');
     background-size: cover;
     background-position: center;
