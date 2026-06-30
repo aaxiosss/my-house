@@ -2,6 +2,11 @@
     font-family: "Felidae";
     src: url("../fonts/Felidae.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("../fonts/CaviarDreams.ttf") format("truetype");
+    /* если у вас есть другие начертания (жирное, курсив), добавьте отдельные блоки */
+}
 * {
     margin: 0;
     padding: 0;
