@@ -236,7 +236,7 @@ white-space: nowrap;        /* запрещает перенос по слова
      
 }
 
-.invite {
+/*.invite {
     background-image: url("images/background.jpeg");
     display: flex;
     justify-content: center;
@@ -258,7 +258,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     text-align: center;
     z-index: 2;
     position: relative;
-}
+}*/
 
 .date {
     background-image: url("images/background.jpeg");
