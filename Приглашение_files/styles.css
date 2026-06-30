@@ -457,7 +457,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;    /* или другой контрастный цвет */
-    font-family: "Caviar Dreams", sans-serif;
+    font-family: "Poiret One", sans-serif;
     font-size: 1rem; /* можно в rem, чтобы адаптировалось */
     text-align: center;
     white-space: nowrap; /* чтобы не переносился на две строки, если нужно */
