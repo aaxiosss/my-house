@@ -9,10 +9,10 @@
     .container {
         max-width: 600px;
     }
-.background-wrapper {
+/*.background-wrapper {
 padding: 384px 0 384px 0;
 background-size: cover;   
-}
+}*/
     .invite {
 
         padding: 40px 0 0 0;
@@ -154,10 +154,10 @@ background-size: cover;
     .container {
         max-width: 520px;
     }
-.background-wrapper {
+/*.background-wrapper {
 padding: 310px 0 310px 0;
 background-size: cover;    
-}
+}*/
 .main {
        padding: 310px 0 310px 0;
     }
@@ -189,10 +189,10 @@ background-size: cover;
         max-width: 380px;
     }
     
-.background-wrapper {
+/*.background-wrapper {
 padding: 212px 0 212px 0;
 background-size: cover;    
-}
+}*/
     .invite {
         overflow: hidden;
     }
@@ -304,10 +304,10 @@ background-size: cover;
     .container {
         max-width: 300px;
     }
-.background-wrapper { 
+/*.background-wrapper { 
        padding: 180px 0 180px 0;
     background-size: cover;
-    }
+    }*/
     .invite {
         overflow: hidden;
     }
@@ -416,10 +416,10 @@ background-size: cover;
     .container {
         max-width: 280px;
     }
-.background-wrapper { 
+/*.background-wrapper { 
        padding: 160px 0 160px 0;
     background-size: cover;
-    }
+    }*/
 
 
     .invite .invite-name {
