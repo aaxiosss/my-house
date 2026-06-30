@@ -11,7 +11,7 @@
     }
 .background-wrapper {
 padding: 384px 0 384px 0;
-    
+background-size: cover;   
 }
     .invite {
 
@@ -156,7 +156,7 @@ padding: 384px 0 384px 0;
     }
 .background-wrapper {
 padding: 310px 0 310px 0;
-    
+background-size: cover;    
 }
 .main {
        padding: 310px 0 310px 0;
@@ -191,7 +191,7 @@ padding: 310px 0 310px 0;
     
 .background-wrapper {
 padding: 212px 0 212px 0;
-    
+background-size: cover;    
 }
     .invite {
         overflow: hidden;
@@ -306,6 +306,7 @@ padding: 212px 0 212px 0;
     }
 .background-wrapper { 
        padding: 180px 0 180px 0;
+    background-size: cover;
     }
     .invite {
         overflow: hidden;
@@ -417,6 +418,7 @@ padding: 212px 0 212px 0;
     }
 .background-wrapper { 
        padding: 160px 0 160px 0;
+    background-size: cover;
     }
 
 
