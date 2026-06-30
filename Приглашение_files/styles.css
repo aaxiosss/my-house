@@ -399,13 +399,26 @@ white-space: nowrap;        /* запрещает перенос по слова
     color: #002D39; /*цвет*/
    
     min-height: 100vh;        /* гарантия для мобильных браузеров */
-    box-sizing: border-box
+    box-sizing: border-box;
 
+    overflow: hidden;         /* чтобы ничего не вылезало */
+    position: relative;       /* для позиционирования дочерних элементов, если понадобится */
+    
 }
 
 .suitcase-container img {
     cursor: pointer;
-    transition: opacity 0.3s;
+  
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* картинка покроет весь контейнер, сохраняя пропорции */
+    
+    transition: opacity 0.3s ease;  /* плавная смена при переключении */
+    position: absolute;       /* если хотите, чтобы картинка точно заполняла контейнер */
+    top: 0;
+    left: 0;
+    
 }
 
 /*.program-title p{
