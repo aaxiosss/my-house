@@ -24,7 +24,7 @@ background-size: cover;
         margin-bottom: 50px;
     }*/
 
-    .data-text {
+    /*.data-text {
         font-size: 40px;
         text-align: center;
     }
@@ -46,7 +46,7 @@ background-size: cover;
 
     .main-info-location a {
         font-size: 22px;
-    }
+    }*/
 
     .program-title p {
         font-size: 36px;
@@ -158,9 +158,9 @@ background-size: cover;
 padding: 310px 0 310px 0;
 background-size: cover;    
 }*/
-.main {
+/*.main {
        padding: 310px 0 310px 0;
-    }
+    }*/
 
     /*.invite .invite-name {
         font-size: 30px;
@@ -171,10 +171,10 @@ background-size: cover;
         top: -201px;
         left: -262px;
     }*/
-    .date-image img {
+   /* .date-image img {
         display: block;
         max-width: 90%;
-    }
+    }*/
 
     .dresscode-info-block {
         width: 80px;
@@ -204,7 +204,7 @@ background-size: cover;
         max-width: 380px;
     }*/
 
-    .date {
+   /* .date {
         padding-bottom: 100px;
     }
 
@@ -233,11 +233,11 @@ background-size: cover;
 
     .main-info-location p:not(.fonts) {
         font-size: 20px;
-    }
+    }*/
 
-    .dear {
+    /*.dear {
         font-size: 36px;
-    }
+    }*/
 
 
     .program-title p:not(.fonts) {
@@ -319,7 +319,7 @@ background-size: cover;
         max-width: 300px;
     }*/
 
-    .date {
+   /* .date {
         padding-bottom: 70px;
     }
     .date-image img {
@@ -352,11 +352,11 @@ background-size: cover;
 
     .main-info-location p:not(.fonts) {
         font-size: 20px;
-    }
+    }*/
 
-    .dear {
+   /* .dear {
         font-size: 36px;
-    }
+    }*/
     .program-title p {
         text-align: center;
     }
@@ -428,7 +428,7 @@ background-size: cover;
         margin-bottom: 0;
     }*/
 
-    .date {
+   /* .date {
         padding-bottom: 50px;
     }
 
@@ -447,15 +447,15 @@ background-size: cover;
 
     .main .no-fonts {;
         max-width: 280px;
-    }
+    }*/
 
-    .dear {
+    /*.dear {
         font-size: 28px;
-    }
+    }*/
 
-    .main-info-location a {
+   /* .main-info-location a {
         font-size: 16px;
-    }
+    }*/
 
 
     .program-title {
