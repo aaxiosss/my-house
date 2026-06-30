@@ -317,14 +317,12 @@ white-space: nowrap;        /* запрещает перенос по слова
     display: flex;
     align-items: center;      /* выравнивание по вертикали */
     justify-content: center;  /* выравнивание по горизонтали */
-    in-height: 100vh;        /* гарантия для мобильных браузеров */
-    box-sizing: border-box;
     
     font-family: "Poiret One", sans-serif; /*шрифт*/
     color: #002D39; /*цвет*/
    
-    position: fixed;
-    overflow: hidden;
+    min-height: 100vh;        /* гарантия для мобильных браузеров */
+    box-sizing: border-box
 
 }
 
