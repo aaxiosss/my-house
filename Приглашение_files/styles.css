@@ -475,37 +475,36 @@ max-width: 80%;
     opacity: 1;
 }
 
-/* Контейнер с сердечками – изначально скрыт */
+/* Контейнер для сердечек – изначально видим (на закрытом чемодане) */
 .suitcase-hearts {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    gap: 12px;
     position: absolute;
-    top: 70%;              /* регулируйте положение */
+    top: 65%;          /* регулируйте положение по вертикали */
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
-    max-width: 500px;
-    z-index: 2;
-    opacity: 0;
+    width: 70%;
+    max-width: 400px;
+    z-index: 2;        /* выше картинок, но ниже текста? можно одинаково */
+    opacity: 1;
     transition: opacity 0.5s ease;
-    pointer-events: none;  /* чтобы клик проходил сквозь */
+    pointer-events: none; /* чтобы клик проходил сквозь */
 }
 
 /* Каждое сердечко */
 .suitcase-hearts img {
-    width: calc(33.33% - 15px); /* 3 в ряд с учётом gap */
-    aspect-ratio: 1 / 1;        /* квадратные сердечки, если они прямоугольные – можно 3/2 или другое */
-    object-fit: contain;        /* сохраняем пропорции, не обрезаем */
-    border-radius: 0;           /* убираем скругление, если не нужно */
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.2)); /* лёгкая тень */
+    width: calc(33.33% - 12px); /* 3 в ряд с учётом gap */
+    aspect-ratio: 1 / 1;        /* квадратные сердечки (можно 4:3, если вытянутые) */
+    object-fit: contain;        /* сохраняем пропорции */
+    border-radius: 4px;         /* опционально, если хотите скруглить */
 }
 
-/* Показываем сердечки, когда чемодан открыт */
+/* Когда чемодан открыт – скрываем сердечки */
 .suitcase-container.is-open .suitcase-hearts {
-    opacity: 1;
-    pointer-events: none;
+    opacity: 0;
 }
 
 /*.program-title p{
