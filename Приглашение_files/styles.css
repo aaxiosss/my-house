@@ -222,7 +222,8 @@ white-space: nowrap;        /* запрещает перенос по слова
     align-items: center;      /* выравнивание по вертикали */
  font-family: "Poiret One", sans-serif; /*шрифт*/
     color: #002D39; /*цвет*/
-    padding: 162px 0 162px 0;
+    height: 100vh;            /* высота на весь экран */
+    min-height: 100vh;        /* гарантия для мобильных браузеров */
    
     
     background-color: black;          /* запасной фон */
