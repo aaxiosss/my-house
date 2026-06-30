@@ -400,7 +400,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     align-items: center;      /* выравнивание по вертикали */
     justify-content: center;  /* выравнивание по горизонтали */
     
-    font-family: "Poiret One", sans-serif; /*шрифт*/
+    font-family: "Caviar Dreams", sans-serif;
     color: #002D39; /*цвет*/
    
     min-height: 100vh;        /* гарантия для мобильных браузеров */
@@ -424,6 +424,28 @@ white-space: nowrap;        /* запрещает перенос по слова
     top: 0;
     left: 0;
     
+}
+
+.pulse-circle-suitcase {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 253, 253, 0.3);
+    animation: circlePulse 1s infinite;
+    z-index: 1;
+    /* Расположение в нижнем левом углу */
+    bottom: 20px;
+    left: 20px;
+    /* Изначально видим (поскольку на закрытом чемодане) */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: none; /* чтобы круг не мешал клику по картинке */
+}
+
+/* Когда чемодан открыт – скрываем круг */
+.suitcase-container.is-open .pulse-circle-suitcase {
+    opacity: 0;
 }
 
 /*.program-title p{
