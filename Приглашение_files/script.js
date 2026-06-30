@@ -30,18 +30,27 @@ function startConfetti() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Находим контейнер (можно по классу или по id – выберите один)
     const container = document.querySelector('.suitcase-container');
+    // если используете id, то лучше: const container = document.getElementById('suitcaseContainer');
+    
+    if (!container) return;
+
     const closed = container.querySelector('.suitcase-closed');
     const opened = container.querySelector('.suitcase-opened');
     let isOpen = false;
 
     container.addEventListener('click', function() {
         if (isOpen) {
+            // Закрываем чемодан
             closed.style.display = 'block';
             opened.style.display = 'none';
+            this.classList.remove('is-open'); // убираем класс – круг появляется
         } else {
+            // Открываем чемодан
             closed.style.display = 'none';
             opened.style.display = 'block';
+            this.classList.add('is-open'); // добавляем класс – круг исчезает
         }
         isOpen = !isOpen;
     });
