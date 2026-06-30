@@ -224,8 +224,8 @@ white-space: nowrap;        /* запрещает перенос по слова
     color: #002D39; /*цвет*/
     height: 100vh;            /* высота на весь экран */
     min-height: 100vh;        /* гарантия для мобильных браузеров */
-   
-    
+    width: 100%;              /* ширина 100% */
+    background-position: center;
     background-color: black;          /* запасной фон */
     background-image: url("2fon.png"); /* путь к вашей картинке */
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
