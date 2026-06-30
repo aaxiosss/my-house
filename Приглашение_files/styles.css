@@ -99,7 +99,7 @@ box-sizing: border-box;
 }
 
 #content {
-    background-color: #6B6B6B;
+    background-color: #808080;
     display: none;
     opacity: 0;
     transition: opacity 1s ease;
