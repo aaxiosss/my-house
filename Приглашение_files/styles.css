@@ -260,7 +260,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     position: relative;
 }*/
 
-.date {
+/*.date {
     background-image: url("images/background.jpeg");
     display: flex;
     justify-content: center;
@@ -303,21 +303,32 @@ white-space: nowrap;        /* запрещает перенос по слова
 .data-text {
     font-size: 65px;
     text-align: center;
-}
+}*/
 
 .main {
     background-color: #003d4f;
     
-background-image: url("3fon.png");
+    background-image: url("3fon.png");
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
+    background-position: center;
     background-repeat: no-repeat;    /* не повторяет */
-    padding: 162px 0 162px 0;
-    position: relative;
+    width: 100%;              /* ширина 100% */
+    height: 100vh;            /* высота на весь экран */   
+    display: flex;
+    align-items: center;      /* выравнивание по вертикали */
+    justify-content: center;  /* выравнивание по горизонтали */
+    in-height: 100vh;        /* гарантия для мобильных браузеров */
+    box-sizing: border-box;
+    
+    font-family: "Poiret One", sans-serif; /*шрифт*/
+    color: #002D39; /*цвет*/
+   
+    position: fixed;
     overflow: hidden;
 
 }
 
-.main img {
+/*.main img {
     right: -133px;
     position: absolute;
     top: -300px;
@@ -333,8 +344,8 @@ background-image: url("3fon.png");
     font-size: 48px;
     margin: 20px 0 20px 0;
     max-width: 650px;
-}
-.main-info-location {
+}*/
+/*.main-info-location {
     margin-left: 30%;
     margin-top: 20px;
 
@@ -365,7 +376,7 @@ background-image: url("3fon.png");
     display: inline-block;
     cursor: pointer;
 
-}
+}*/
 
 .program-title {
     padding: 70px 0 70px 0;
