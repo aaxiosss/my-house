@@ -475,6 +475,39 @@ max-width: 80%;
     opacity: 1;
 }
 
+/* Контейнер с сердечками – изначально скрыт */
+.suitcase-hearts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    top: 70%;              /* регулируйте положение */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 500px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;  /* чтобы клик проходил сквозь */
+}
+
+/* Каждое сердечко */
+.suitcase-hearts img {
+    width: calc(33.33% - 15px); /* 3 в ряд с учётом gap */
+    aspect-ratio: 1 / 1;        /* квадратные сердечки, если они прямоугольные – можно 3/2 или другое */
+    object-fit: contain;        /* сохраняем пропорции, не обрезаем */
+    border-radius: 0;           /* убираем скругление, если не нужно */
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.2)); /* лёгкая тень */
+}
+
+/* Показываем сердечки, когда чемодан открыт */
+.suitcase-container.is-open .suitcase-hearts {
+    opacity: 1;
+    pointer-events: none;
+}
+
 /*.program-title p{
     font-size: 48px;
 }
