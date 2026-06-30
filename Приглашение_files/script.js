@@ -29,6 +29,25 @@ function startConfetti() {
     })();
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.suitcase-container');
+    const closed = container.querySelector('.suitcase-closed');
+    const opened = container.querySelector('.suitcase-opened');
+    let isOpen = false;
+
+    container.addEventListener('click', function() {
+        if (isOpen) {
+            closed.style.display = 'block';
+            opened.style.display = 'none';
+        } else {
+            closed.style.display = 'none';
+            opened.style.display = 'block';
+        }
+        isOpen = !isOpen;
+    });
+});
+
+
 document.querySelector(".wedding-form").addEventListener("submit", async function (e) {
     e.preventDefault(); // Останавливаем стандартную отправку формы
 
