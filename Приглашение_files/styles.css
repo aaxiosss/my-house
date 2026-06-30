@@ -443,9 +443,11 @@ white-space: nowrap;        /* запрещает перенос по слова
     pointer-events: none; /* чтобы круг не мешал клику по картинке */
 }
 
-/* Когда чемодан открыт – скрываем круг */
+/* Когда чемодан открыт – скрываем круг и отключаем анимацию */
 .suitcase-container.is-open .pulse-circle-suitcase {
     opacity: 0;
+    animation: none; /* отключаем пульсацию, чтобы она не переопределяла opacity */
+
 }
 
 /*.program-title p{
