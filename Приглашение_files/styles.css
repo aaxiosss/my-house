@@ -379,10 +379,27 @@ white-space: nowrap;        /* запрещает перенос по слова
 }*/
 
 .program-title {
-    padding: 70px 0 70px 0;
-    background-image: url("images/background.jpeg");
+    background-color: #003d4f;
+    
+    background-image: url("4fon.png");
+    background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
+    background-position: center;
+    background-repeat: no-repeat;    /* не повторяет */
+    width: 100%;              /* ширина 100% */
+    height: 100vh;            /* высота на весь экран */   
+    display: flex;
+    align-items: center;      /* выравнивание по вертикали */
+    justify-content: center;  /* выравнивание по горизонтали */
+    in-height: 100vh;        /* гарантия для мобильных браузеров */
+    box-sizing: border-box;
+    
+    font-family: "Poiret One", sans-serif; /*шрифт*/
+    color: #002D39; /*цвет*/
+   
+    position: fixed;
+    overflow: hidden;
 }
-.program-title p{
+/*.program-title p{
     font-size: 48px;
 }
 
@@ -390,7 +407,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     font-size: 40px;
     margin-top: 20px;
     max-width: 500px;
-}
+}*/
 
 .program {
     padding: 70px 0 70px 0;
