@@ -458,7 +458,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     transform: translate(-50%, -50%);
     color: black;    /* или другой контрастный цвет */
     font-family: "Poiret One", sans-serif;
-    font-size: 1rem; /* можно в rem, чтобы адаптировалось */
+    font-size: 1.2rem; /* можно в rem, чтобы адаптировалось */
     text-align: center;
     white-space: nowrap; /* чтобы не переносился на две строки, если нужно */
     opacity: 0;         /* изначально скрыт */
