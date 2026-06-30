@@ -382,10 +382,10 @@ white-space: nowrap;        /* запрещает перенос по слова
 
 }*/
 
-.program-title {
+.suitcase-container {
     background-color: #003d4f;
     
-    background-image: url("4fon.png");
+    /*background-image: url("4fon.png");*/
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
     background-position: center;
     background-repeat: no-repeat;    /* не повторяет */
@@ -402,6 +402,12 @@ white-space: nowrap;        /* запрещает перенос по слова
     box-sizing: border-box
 
 }
+
+.suitcase-container img {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
 /*.program-title p{
     font-size: 48px;
 }
