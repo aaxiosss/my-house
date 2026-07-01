@@ -483,7 +483,7 @@ line-height: 1.4;
 
 /* Блок референсов – изначально скрыт */
 .dresscode-references {
-    overflow: hidden;
+   
     width: 100%;
     position: absolute;
     opacity: 0;
@@ -527,17 +527,21 @@ line-height: 1.4;
 .strelka-images {
     border: 2px solid red;
     min-height: 400px; /* чтобы видеть область */
+
+width: 100%;                   /* фиксированная ширина = 100% родителя */
+    max-width: 100%;               /* ограничение, чтобы не вылезать */
+    overflow-x: auto;              /* включает прокрутку */
     
     display: flex;    /* чтобы ширина была по содержимому */
     touch-action: pan-x; /* разрешает только горизонтальную прокрутку */
-    overflow-x: auto;
+    
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
     gap: 20px;
     cursor: grab;
-    max-width: 100%;             /* растягиваем на всю ширину контейнера */
-    white-space: nowrap;     /* предотвращаем перенос */
+    
+   
 }
 
 .strelka-images::-webkit-scrollbar {
