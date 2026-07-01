@@ -525,6 +525,9 @@ line-height: 1.4;
 }
 
 .strelka-images {
+    border: 2px solid red;
+    min-height: 400px; /* чтобы видеть область */
+    
     display: flex;    /* чтобы ширина была по содержимому */
     touch-action: pan-x; /* разрешает только горизонтальную прокрутку */
     overflow-x: auto;
