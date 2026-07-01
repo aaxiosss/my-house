@@ -488,7 +488,7 @@ line-height: 1.4;
     position: relative;
     opacity: 0;
      pointer-events: none;
-    /*top: 60%;               
+    top: 60%;               
     left: 50%;
     transform: translateX(-50%);
     
@@ -496,7 +496,7 @@ line-height: 1.4;
     z-index: 3;
     
     transition: opacity 0.6s ease;
-   */
+   
 }
 
 .suitcase-container.is-open .dresscode-references {
@@ -547,7 +547,7 @@ line-height: 1.4;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    /*transition: transform 0.2s;*/
+    transition: transform 0.2s;
 }
 
 /*.strelka-images img:hover {
