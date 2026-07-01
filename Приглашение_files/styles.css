@@ -521,6 +521,7 @@ line-height: 1.4;
 }
 
 .strelka-images {
+    touch-action: pan-x;          /* разрешает только горизонтальный скролл */
     display: inline-flex;    /* чтобы ширина была по содержимому */
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
