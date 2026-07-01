@@ -409,7 +409,16 @@ white-space: nowrap;        /* запрещает перенос по слова
 
     overflow: hidden;         /* чтобы ничего не вылезало */
     position: relative;       /* для позиционирования дочерних элементов, если понадобится */
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
     
+}
+
+.suitcase-container.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .suitcase-container img {
@@ -466,7 +475,10 @@ white-space: nowrap;        /* запрещает перенос по слова
     white-space: nowrap; /* чтобы не переносился на две строки, если нужно */
     
     opacity: 0;
-    transition: opacity 1.2s ease 0.8s;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition-delay: 0.4s; /* задержка перед появлением */
+    
     pointer-events: none; /* чтобы клик проходил сквозь текст на картинку */
     z-index: 2;        /* выше картинок, но ниже круга? можно выше, но круг z-index:1, зададим 2 */
 line-height: 1.4;
