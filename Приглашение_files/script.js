@@ -66,6 +66,31 @@ strelkaContainers.forEach(container => {
     container.addEventListener('dragstart', (e) => e.preventDefault());
 });
 
+// --- ДОБАВИТЬ ОБРАБОТЧИКИ ДЛЯ СЕНСОРНЫХ УСТРОЙСТВ ---
+    container.addEventListener('touchstart', (e) => {
+        const touch = e.touches[0];
+        isDown = true;
+        container.classList.add('active');
+        startX = touch.pageX - container.offsetLeft;
+        scrollLeft = container.scrollLeft;
+    }, { passive: true }); // passive, чтобы не блокировать скролл страницы
+
+    container.addEventListener('touchend', () => {
+        isDown = false;
+        container.classList.remove('active');
+    });
+
+    container.addEventListener('touchmove', (e) => {
+        if (!isDown) return;
+        const touch = e.touches[0];
+        const x = touch.pageX - container.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        container.scrollLeft = scrollLeft - walk;
+        e.preventDefault(); // предотвращает скролл страницы во время перетаскивания
+    }, { passive: false });
+});
+
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
