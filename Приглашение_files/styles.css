@@ -494,17 +494,20 @@ line-height: 1.4;
     opacity: 1;
     transition: opacity 2.0s ease;
     pointer-events: none; /* чтобы клик проходил сквозь */
+    
 }
 
 /* Каждое сердечко */
 .suitcase-hearts img {
    display: block;           /* !!! САМОЕ ВАЖНОЕ */
-    width: calc(33.33% - 12px);
+    flex: 0 0 calc(33.33% - 12px);
     aspect-ratio: 1 / 1;      /* оставляем */
     object-fit: contain;
     height: auto;             /* для надёжности */
     flex-shrink: 0;           /* чтобы не сжимались */
-    background: rgba(255,255,255,0.1); /* временно, чтобы видеть область */
+    
+    border-radius: 4px;
+    
 }
 
 /* Когда чемодан открыт – скрываем сердечки */
