@@ -498,10 +498,12 @@ line-height: 1.4;
 
 /* Каждое сердечко */
 .suitcase-hearts img {
-    width: calc(33.33% - 12px); /* 3 в ряд с учётом gap */
-    aspect-ratio: 1 / 1;        /* квадратные сердечки (можно 4:3, если вытянутые) */
-    object-fit: contain;        /* сохраняем пропорции */
-    border-radius: 4px;         /* опционально, если хотите скруглить */
+   display: block;        /* или inline-block */
+    width: calc(33.33% - 12px);
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: rgba(255,255,255,0.2); /* временно, чтобы увидеть область */
+    min-height: 50px;      /* чтобы убедиться, что блок есть */
 }
 
 /* Когда чемодан открыт – скрываем сердечки */
