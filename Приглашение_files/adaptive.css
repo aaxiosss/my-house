@@ -9,6 +9,20 @@
     .container {
         max-width: 600px;
     }
+
+      .dresscode-references {
+        width: 90%;
+        bottom: 8%;
+    }
+    .strelka-images img {
+        min-width: 150px;
+        height: 220px;
+    }
+    .strelka-text {
+        font-size: 14px;
+    }
+}
+    
 /*.background-wrapper {
 padding: 384px 0 384px 0;
 background-size: cover;   
@@ -148,7 +162,10 @@ background-size: cover;
         padding-left: 10px;
         padding-right: 10px;
     }
-
+/*ОТСТУУУУУУУППППП
+    ОТСТУУУУУУУППППП
+    ОТСТУУУУУУУППППП
+    */
 }
 @media (max-width: 625px) {
     .container {
@@ -182,12 +199,28 @@ background-size: cover;
     }
 
 
+    
+
 }
 
 @media (max-width: 425px) {
     .container {
         max-width: 380px;
     }
+
+.dresscode-references {
+        width: 95%;
+        bottom: 5%;
+    }
+    .strelka-images img {
+        min-width: 120px;
+        height: 180px;
+    }
+    .strelka-text svg {
+        width: 60px;
+        height: 25px;
+    }
+}
     
 /*.background-wrapper {
 padding: 212px 0 212px 0;
