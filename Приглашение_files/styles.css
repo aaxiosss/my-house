@@ -498,12 +498,13 @@ line-height: 1.4;
 
 /* Каждое сердечко */
 .suitcase-hearts img {
-   display: block;        /* или inline-block */
+   display: block;           /* !!! САМОЕ ВАЖНОЕ */
     width: calc(33.33% - 12px);
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;      /* оставляем */
     object-fit: contain;
-    background: rgba(255,255,255,0.2); /* временно, чтобы увидеть область */
-    min-height: 50px;      /* чтобы убедиться, что блок есть */
+    height: auto;             /* для надёжности */
+    flex-shrink: 0;           /* чтобы не сжимались */
+    background: rgba(255,255,255,0.1); /* временно, чтобы видеть область */
 }
 
 /* Когда чемодан открыт – скрываем сердечки */
