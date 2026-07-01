@@ -526,6 +526,7 @@ line-height: 1.4;
 
 .strelka-images {
     display: flex;    /* чтобы ширина была по содержимому */
+    touch-action: pan-x; /* разрешает только горизонтальную прокрутку */
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
