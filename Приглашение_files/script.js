@@ -29,66 +29,6 @@ function startConfetti() {
     })();
 }
 
-// Drag to scroll для горизонтальных контейнеров
-const strelkaContainers = document.querySelectorAll('.strelka-images');
-
-strelkaContainers.forEach(container => {
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    container.addEventListener('mousedown', (e) => {
-        isDown = true;
-        container.classList.add('active');
-        startX = e.pageX - container.offsetLeft;
-        scrollLeft = container.scrollLeft;
-    });
-
-    container.addEventListener('mouseleave', () => {
-        isDown = false;
-        container.classList.remove('active');
-    });
-
-    container.addEventListener('mouseup', () => {
-        isDown = false;
-        container.classList.remove('active');
-    });
-
-    container.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - container.offsetLeft;
-        const walk = (x - startX) * 1.5; // скорость
-        container.scrollLeft = scrollLeft - walk;
-    });
-
-    // Дополнительно: отключаем выделение текста при перетаскивании
-    container.addEventListener('dragstart', (e) => e.preventDefault());
-});
-
-// --- ДОБАВИТЬ ОБРАБОТЧИКИ ДЛЯ СЕНСОРНЫХ УСТРОЙСТВ ---
-    container.addEventListener('touchstart', (e) => {
-        const touch = e.touches[0];
-        isDown = true;
-        container.classList.add('active');
-        startX = touch.pageX - container.offsetLeft;
-        scrollLeft = container.scrollLeft;
-    }, { passive: true }); // passive, чтобы не блокировать скролл страницы
-
-    container.addEventListener('touchend', () => {
-        isDown = false;
-        container.classList.remove('active');
-    });
-
-    container.addEventListener('touchmove', (e) => {
-        if (!isDown) return;
-        const touch = e.touches[0];
-        const x = touch.pageX - container.offsetLeft;
-        const walk = (x - startX) * 1.5;
-        container.scrollLeft = scrollLeft - walk;
-        e.preventDefault(); // предотвращает скролл страницы во время перетаскивания
-    }, { passive: false });
-});
 
 
 
