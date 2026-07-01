@@ -464,8 +464,9 @@ white-space: nowrap;        /* запрещает перенос по слова
     font-size: 1.3rem; /* можно в rem, чтобы адаптировалось */
     text-align: center;
     white-space: nowrap; /* чтобы не переносился на две строки, если нужно */
+    
     opacity: 0;         /* изначально скрыт */
-    transition: opacity 1.5s ease;
+    transition: opacity 1s ease;
     pointer-events: none; /* чтобы клик проходил сквозь текст на картинку */
     z-index: 2;        /* выше картинок, но ниже круга? можно выше, но круг z-index:1, зададим 2 */
 line-height: 1.4;
