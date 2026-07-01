@@ -483,16 +483,20 @@ line-height: 1.4;
 
 /* Блок референсов – изначально скрыт */
 .dresscode-references {
-    position: absolute;
-    top: 60%;                /* регулируйте */
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+     pointer-events: none;
+    /*top: 60%;               
     left: 50%;
     transform: translateX(-50%);
-    width: 85%;
+    
     max-width: 700px;
     z-index: 3;
-    opacity: 0;
+    
     transition: opacity 0.6s ease;
-    pointer-events: none;
+   */
 }
 
 .suitcase-container.is-open .dresscode-references {
@@ -521,16 +525,14 @@ line-height: 1.4;
 }
 
 .strelka-images {
-    touch-action: pan-x;          /* разрешает только горизонтальный скролл */
-    display: inline-flex;    /* чтобы ширина была по содержимому */
+    display: flex;    /* чтобы ширина была по содержимому */
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
     gap: 20px;
-    padding: 10px 0;
     cursor: grab;
-    width: 100%;             /* растягиваем на всю ширину контейнера */
+    max-width: 100%;             /* растягиваем на всю ширину контейнера */
     white-space: nowrap;     /* предотвращаем перенос */
 }
 
@@ -545,16 +547,16 @@ line-height: 1.4;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    transition: transform 0.2s;
+    /*transition: transform 0.2s;*/
 }
 
-.strelka-images img:hover {
+/*.strelka-images img:hover {
     transform: scale(1.02);
 }
 
 .strelka-images.active {
     cursor: grabbing;
-}
+}*/
 
 /*.program-title p{
     font-size: 48px;
