@@ -409,16 +409,7 @@ white-space: nowrap;        /* запрещает перенос по слова
 
     overflow: hidden;         /* чтобы ничего не вылезало */
     position: relative;       /* для позиционирования дочерних элементов, если понадобится */
-
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
     
-}
-
-.suitcase-container.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .suitcase-container img {
