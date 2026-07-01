@@ -11,15 +11,15 @@
     }
 
       .dresscode-references {
+        top: 65%;
         width: 90%;
-        bottom: 77%;
     }
     .strelka-images img {
         min-width: 150px;
-        height: 220px;
+        height: 250px;
     }
     .strelka-text {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
     
@@ -209,12 +209,12 @@ background-size: cover;
     }
 
 .dresscode-references {
+        top: 70%;
         width: 95%;
-        bottom: 77%;
     }
     .strelka-images img {
         min-width: 120px;
-        height: 180px;
+        height: 200px;
     }
     .strelka-text svg {
         width: 60px;
