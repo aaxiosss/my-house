@@ -156,3 +156,44 @@ document.addEventListener("DOMContentLoaded", () => {
     const titleSection = document.querySelector(".fade-in");
     titleSection.classList.add("show");
 });
+
+strelkaContainers.forEach(container => {
+    let isDown = false;
+    let startX, scrollLeft;
+
+    function startDrag(clientX) {
+        isDown = true;
+        container.classList.add('active');
+        startX = clientX - container.getBoundingClientRect().left;
+        scrollLeft = container.scrollLeft;
+    }
+
+    function moveDrag(clientX) {
+        if (!isDown) return;
+        const x = clientX - container.getBoundingClientRect().left;
+        const walk = (x - startX) * 1.5;
+        container.scrollLeft = scrollLeft - walk;
+    }
+
+    function endDrag() {
+        isDown = false;
+        container.classList.remove('active');
+    }
+
+    // Mouse
+    container.addEventListener('mousedown', (e) => startDrag(e.clientX));
+    document.addEventListener('mousemove', (e) => moveDrag(e.clientX));
+    document.addEventListener('mouseup', endDrag);
+
+    // Touch (без preventDefault, чтобы не блокировать клики)
+    container.addEventListener('touchstart', (e) => {
+        startDrag(e.touches[0].clientX);
+    }, { passive: true });
+
+    container.addEventListener('touchmove', (e) => {
+        moveDrag(e.touches[0].clientX);
+        // Не вызываем preventDefault() – пусть браузер сам решает, скроллить или нет
+    }, { passive: true });
+
+    container.addEventListener('touchend', endDrag, { passive: true });
+});
