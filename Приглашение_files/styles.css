@@ -465,12 +465,16 @@ white-space: nowrap;        /* запрещает перенос по слова
     text-align: center;
     white-space: nowrap; /* чтобы не переносился на две строки, если нужно */
     
-    opacity: 0;         /* изначально скрыт */
-    transition: opacity 1s ease;
+    opacity: 0;
+    transition: opacity 1.2s ease 0.8s;
     pointer-events: none; /* чтобы клик проходил сквозь текст на картинку */
     z-index: 2;        /* выше картинок, но ниже круга? можно выше, но круг z-index:1, зададим 2 */
 line-height: 1.4;
     
+}
+
+.suitcase-container.show .suitcase-text {
+    opacity: 1;
 }
 
 /* Когда чемодан закрыт (класс is-open отсутствует) – показываем текст */
