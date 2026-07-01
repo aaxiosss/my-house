@@ -484,61 +484,62 @@ line-height: 1.4;
 /* Блок референсов – изначально скрыт */
 .dresscode-references {
     position: absolute;
-    bottom: 30%;          /* или другое положение */
+    top: 60%;                /* регулируйте */
     left: 50%;
     transform: translateX(-50%);
-    width: 95%;
+    width: 85%;
     max-width: 700px;
-    z-index: 3;           /* выше картинок */
+    z-index: 3;
     opacity: 0;
     transition: opacity 0.6s ease;
-    pointer-events: none; /* чтобы не мешать клику, пока скрыт */
+    pointer-events: none;
 }
 
-/* Показываем только при открытом чемодане */
 .suitcase-container.is-open .dresscode-references {
     opacity: 1;
-    pointer-events: auto; /* теперь можно взаимодействовать */
+    pointer-events: auto;
 }
 
-/* Стили для подписи "листай" */
 .strelka-text {
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
-    color: #f8efea; /* подберите под свой фон */
+    color: #f8efea;
     text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
     gap: 8px;
+    position: relative;
+    z-index: 5; /* чтобы быть поверх картинок */
 }
 
 .strelka-text svg {
     width: 80px;
     height: 30px;
-    fill: #f8efea;       /* если нужно изменить цвет стрелки */
+    fill: #f8efea;  /* белая стрелка */
 }
 
-/* Горизонтальный контейнер с картинками */
 .strelka-images {
-    display: flex;
+    display: inline-flex;    /* чтобы ширина была по содержимому */
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;       /* Firefox */
-    -ms-overflow-style: none;    /* IE */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     gap: 20px;
     padding: 10px 0;
     cursor: grab;
+    width: 100%;             /* растягиваем на всю ширину контейнера */
+    white-space: nowrap;     /* предотвращаем перенос */
 }
 
 .strelka-images::-webkit-scrollbar {
-    display: none;               /* Chrome/Safari */
+    display: none;
 }
 
 .strelka-images img {
     flex-shrink: 0;
     min-width: 200px;
-    height: 300px;
+    height: 350px;           /* увеличено */
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
@@ -549,7 +550,6 @@ line-height: 1.4;
     transform: scale(1.02);
 }
 
-/* Активное перетаскивание */
 .strelka-images.active {
     cursor: grabbing;
 }
