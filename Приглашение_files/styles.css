@@ -503,8 +503,9 @@ line-height: 1.4;
 .strelka-text {
     text-align: left;
     font-size: 18px;
+        padding: 0 0 0 2%;
     margin-bottom: 10px;
-    color: #f8efea;
+    color: black;
     text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
@@ -516,7 +517,7 @@ line-height: 1.4;
 .strelka-text svg {
     width: 80px;
     height: 30px;
-    fill: #f8efea;  /* белая стрелка */
+    fill: black;  /* белая стрелка */
 }
 
 .strelka-images {
