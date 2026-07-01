@@ -485,7 +485,7 @@ line-height: 1.4;
 .dresscode-references {
     overflow: hidden;
     width: 100%;
-    position: relative;
+    position: absolute;
     opacity: 0;
      pointer-events: none;
     top: 60%;               
