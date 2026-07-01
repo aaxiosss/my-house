@@ -485,7 +485,78 @@ line-height: 1.4;
     opacity: 1;
 }
 
+/* Блок референсов – изначально скрыт */
+.dresscode-references {
+    position: absolute;
+    bottom: 30%;          /* или другое положение */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 700px;
+    z-index: 3;           /* выше картинок */
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none; /* чтобы не мешать клику, пока скрыт */
+}
 
+/* Показываем только при открытом чемодане */
+.suitcase-container.is-open .dresscode-references {
+    opacity: 1;
+    pointer-events: auto; /* теперь можно взаимодействовать */
+}
+
+/* Стили для подписи "листай" */
+.strelka-text {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f8efea; /* подберите под свой фон */
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.strelka-text svg {
+    width: 80px;
+    height: 30px;
+    fill: #f8efea;       /* если нужно изменить цвет стрелки */
+}
+
+/* Горизонтальный контейнер с картинками */
+.strelka-images {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE */
+    gap: 20px;
+    padding: 10px 0;
+    cursor: grab;
+}
+
+.strelka-images::-webkit-scrollbar {
+    display: none;               /* Chrome/Safari */
+}
+
+.strelka-images img {
+    flex-shrink: 0;
+    min-width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.2s;
+}
+
+.strelka-images img:hover {
+    transform: scale(1.02);
+}
+
+/* Активное перетаскивание */
+.strelka-images.active {
+    cursor: grabbing;
+}
 
 /*.program-title p{
     font-size: 48px;
