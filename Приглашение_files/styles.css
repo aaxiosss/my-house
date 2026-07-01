@@ -477,6 +477,10 @@ line-height: 1.4;
     opacity: 1;
 }
 
+.suitcase-container.is-open .suitcase-text {
+    opacity: 0;  /* или display: none, но с opacity плавнее */
+}
+
 /* Блок референсов – изначально скрыт */
 .dresscode-references {
     position: absolute;
