@@ -3,7 +3,11 @@ document.querySelector('.open-btn').addEventListener('click', () => {
 
     const preloader = document.getElementById('preloader');
     const content = document.getElementById('content');
-
+//тут вроде добавил константы для работы музона//
+    const musicToggle = document.getElementById("music-toggle");
+    const audio = document.getElementById("bgMusic");
+    let isStarted = false;
+    //тут вот конец музончика//
     preloader.style.opacity = 0;
 
     setTimeout(() => {
@@ -15,6 +19,45 @@ document.querySelector('.open-btn').addEventListener('click', () => {
         }, 50);
     }, 300); // Можно чуть задержать, чтобы плавность была заметнее
 });
+
+//Продолжаем работу над музычкой//
+function loadMusic() {
+        // Проверяем, что музыка еще не загружена
+        if (audio.readyState === 0) {
+            audio.load(); // Загружаем музыку
+            console.log("Музыка загружается...");
+        }
+
+        // Воспроизведение музыки
+        audio.play().then(() => {
+            if (!isStarted) {
+                audio.currentTime = 10; // если хочешь начать с определённого момента
+                isStarted = true;
+            }
+            // Показываем кнопку управления музыкой
+            if (musicToggle) {
+                musicToggle.style.display = "block";
+                musicToggle.textContent = "🔊";
+            }
+        }).catch(error => {
+            console.log("Ошибка воспроизведения:", error);
+        });
+    }
+// Переключатель музыки
+    if (musicToggle) {
+        musicToggle.addEventListener("click", function () {
+            if (audio.paused) {
+                audio.play();
+                musicToggle.textContent = "🔊";
+            } else {
+                audio.pause();
+                musicToggle.textContent = "🔇";
+            }
+        });
+    }
+
+const video = document.getElementById("bg-video");
+//тут конец музыки//
 
 // Конфетти — временно заглушка
 function startConfetti() {
