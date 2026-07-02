@@ -24,26 +24,64 @@
     }
     
     /* Программа дня – переключаем на вертикальный список */
-    .event {
-        position: relative;
-        width: 100%;
-        margin-bottom: 30px;
-        left: auto !important;
-        right: auto !important;
-        top: auto !important;
-        bottom: auto !important;
-    }
-    .timeline {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .time-info {
-        text-align: center;
-    }
-    .time-line-svg svg {
-        /*display: none; */
-    }
+   /* ===== ПРОГРАММА ДНЯ: мобильная версия ===== */
+.time-line-svg {
+    height: 500px;           /* высота контейнера, подберите под свой макет */
+    position: relative;
+}
+.time-line-svg svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;     /* чтобы SVG не обрезался */
+}
+
+.timeline {
+    position: absolute;      /* накладываем поверх SVG */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;    /* чтобы клики проходили сквозь, если нужно */
+}
+
+/* Каждое событие – абсолютно, но с координатами для маленького экрана */
+.event {
+    position: absolute !important;
+    width: 160px;            /* ширина текстового блока */
+    pointer-events: auto;    /* если нужно кликать по ссылкам */
+}
+
+.event-one {
+    top: 8%;
+    left: 3%;
+}
+.event-two {
+    top: 33%;
+    right: 3%;
+}
+.event-three {
+    bottom: 25%;
+    left: 3%;
+}
+.event-four {
+    bottom: 8%;
+    right: 3%;
+}
+
+/* Уменьшаем шрифты */
+.time-info-time {
+    font-size: 24px;
+}
+.description {
+    font-size: 14px;
+}
+.description span {
+    font-size: 18px;
+}
+.time-info a {
+    font-size: 14px;
+}
     
 /*.background-wrapper {
 padding: 384px 0 384px 0;
