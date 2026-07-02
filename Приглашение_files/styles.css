@@ -847,7 +847,10 @@ width: 100%;                   /* фиксированная ширина = 100%
 
 .wishes {
     padding: 100px 0 100px 0;
-    background-color: #003d4f;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url("6fon.png");
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
     background-position: center;
