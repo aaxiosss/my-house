@@ -295,19 +295,7 @@ background-size: cover;
     }
 
 
-    .dresscode {
-        padding: 70px 0 70px 0;
-    }
-
-    .dresscode-info-text {
-        max-width: 380px;
-    }
-
-    .dresscode-info-block {
-        width: 70px;
-        height: 56px;
-    }
-
+    
 
     .wishes {
         padding: 70px 0 70px 0;
@@ -323,12 +311,12 @@ background-size: cover;
     }
 
     .presence-text {
-        font-size: 28px;
+        font-size: 27px;
     }
 
     .timout-title {
         font-size: 36px;
-        color: #003d4f;
+        
         text-align: center;
         font-weight: bold;
         margin-bottom: 10px;
@@ -406,22 +394,7 @@ background-size: cover;
     }
 
 
-    .dresscode {
-        padding: 70px 0 70px 0;
-    }
-
-    .dresscode-info-text {
-        max-width: 300px;
-        font-size: 22px;
-    }
-
-
-
-    .dresscode-info-block {
-        width: 70px;
-        height: 56px;
-    }
-
+    
 
     .wishes-text {
         font-size: 22px;
