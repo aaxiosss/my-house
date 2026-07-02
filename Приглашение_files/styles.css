@@ -923,53 +923,6 @@ width: 100%;                   /* фиксированная ширина = 100%
 
 }
 
-.dresscode {
-    padding: 100px 0 100px 0;
-    background-image: url("images/background.jpeg");
-}
-
-.dresscode .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dresscode-title {
-    font-size: 48px;
-    margin-bottom: 40px;
-}
-
-.dresscode-info-text {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.dresscode-info-blocks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.dresscode-info-block {
-    width: 200px;
-    height: 120px;
-}
-.dresscode-info-block.first {
-    background-color: #c9c4c4;
-}
-.dresscode-info-block.second {
-    background-color: #e7ddd4;
-}
-.dresscode-info-block.third {
-    background-color: #5c5c5c;
-}
-.dresscode-info-block.four {
-    background-color: #302f2e;
-}
-
-
 
 .presence {
     padding: 100px 0 100px 0;
