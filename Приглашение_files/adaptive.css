@@ -58,7 +58,7 @@
 }
 .event-two {
     top: 38%;
-    right: -7%;
+    right: 0%;
 }
 .event-three {
     bottom: 33%;
@@ -66,7 +66,7 @@
 }
 .event-four {
     bottom: 8%;
-    right: -7%;
+    right: 0%;
 }
 
 /* Уменьшаем шрифты */
@@ -331,6 +331,14 @@ background-size: cover;
         min-width: 200px;
         height: 200px;
     }
+        .event-two {
+        top: 38%;
+        right: 0%;
+    }
+    .event-four {
+        bottom: 0%;
+        right: 0%;
+    }
 /*.background-wrapper { 
        padding: 180px 0 180px 0;
     background-size: cover;
@@ -418,6 +426,21 @@ background-size: cover;
 
 @media (max-width: 320px) {
     .container { max-width: 280px; }
+    .suitcase-text {
+    font-size: 18px
+        }
+    .event-two {
+        top: 38%;
+        right: -13%;
+    }
+    .event-three {
+        bottom: 23%;
+        left: 13%;
+    }
+        .event-four {
+        bottom: -7%;
+        right: -13%;
+    }
 /*.background-wrapper { 
        padding: 160px 0 160px 0;
     background-size: cover;
