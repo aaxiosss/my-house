@@ -170,7 +170,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     animation: circlePulse 1s infinite;
     z-index: 1;
 }
-/*тут начал пихать музон*/
+/*тут начал пихать музоннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннннн*/
 #music-toggle {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
@@ -209,7 +209,51 @@ button {
             outline: none; /* Убирает синюю рамку при фокусе */
         }
     }
-/*тут закончил пихать стили для музона*/
+.music-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.music-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+}
+
+
+.music-btn {
+    width: 50px;
+    height: 50px;
+    background: transparent !important;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    order: 2;
+}
+
+
+
+.music-text {
+    font-size: 30px;
+    text-align: left;
+    color: #706556;
+    order: 1;
+}
+
+/*тут закончил пихать стили для музонаааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа*/
 @keyframes heartPulse {
     0%, 100% {
         transform: scale(1);
