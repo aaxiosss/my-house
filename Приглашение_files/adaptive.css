@@ -53,12 +53,12 @@
 }
 
 .event-one {
-    top: 10%;
+    top: 15%;
     left: 13%;
 }
 .event-two {
     top: 38%;
-    right: -13%;
+    right: -7%;
 }
 .event-three {
     bottom: 33%;
@@ -66,7 +66,7 @@
 }
 .event-four {
     bottom: 8%;
-    right: -13%;
+    right: -7%;
 }
 
 /* Уменьшаем шрифты */
