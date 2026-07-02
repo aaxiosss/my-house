@@ -16,6 +16,7 @@ document.querySelector('.open-btn').addEventListener('click', () => {
 
         setTimeout(() => {
             content.style.opacity = 1;
+            loadMusic();
         }, 50);
     }, 300); // Можно чуть задержать, чтобы плавность была заметнее
 });
