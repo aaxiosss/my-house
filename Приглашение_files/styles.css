@@ -92,27 +92,25 @@ box-sizing: border-box;
 }
 
 button {
-        -webkit-appearance: none; /* Убирает дефолтные стили в Safari */
-        -moz-appearance: none; /* Для Firefox */
-        appearance: none; /* Общий сброс */
-        background: white;
-        width: 100%;
-        padding: 10px;
-        border: 1px solid black;
-        color: black;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-
-        &:hover {
-            background: gray;
-        }
-
-        &:focus {
-            outline: none; /* Убирает синюю рамку при фокусе */
-        }
-    }
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover {
+    background: gray;
+}
+button:focus {
+    outline: none;
+}
 .music-container {
     display: flex;
     align-items: center;
