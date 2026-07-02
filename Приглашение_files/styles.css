@@ -737,11 +737,11 @@ width: 100%;                   /* фиксированная ширина = 100%
 .program {
     width: 100%;
     overflow-x: hidden;
-    padding-top: 50px;
+    padding-top: 80px;
     background-color: rgba(255, 255, 255, 0.5);
     background-image: url("5fon.png");
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;    /* не повторяет */
 }
 
