@@ -865,6 +865,8 @@ width: 100%;                   /* фиксированная ширина = 100%
 
 .wishes-text {
     font-size: 40px;
+        color: black;
+        background-color: rgb(139 134 134 / 30%);
 }
 
 
