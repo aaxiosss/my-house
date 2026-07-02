@@ -828,6 +828,29 @@ width: 100%;                   /* фиксированная ширина = 100%
 }
 
 /*Закончил вставлять таймингггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггг*/
+/*Начало раздела пожеланий*/
+.pojelania {
+    background-color: #003d4f;
+    
+    background-image: url("6fon.png");
+    background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
+    background-position: center;
+    background-repeat: no-repeat;    /* не повторяет */
+    width: 100%;              /* ширина 100% */
+    height: 100vh;            /* высота на весь экран */   
+    display: flex;
+    align-items: center;      /* выравнивание по вертикали */
+    justify-content: center;  /* выравнивание по горизонтали */
+    
+    font-family: "Poiret One", sans-serif; /*шрифт*/
+    color: #002D39; /*цвет*/
+   
+    min-height: 100vh;        /* гарантия для мобильных браузеров */
+    box-sizing: border-box
+
+}
+
+/*Конец раздела пожеланий*/
 .organizer {
     padding: 100px 0 100px 0;
     background-color: #003d4f;
