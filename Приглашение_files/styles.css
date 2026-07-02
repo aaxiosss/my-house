@@ -876,7 +876,10 @@ width: 100%;                   /* фиксированная ширина = 100%
 /*Конец раздела пожеланий*/
 .organizer {
     padding: 100px 0 100px 0;
-    background-color: #003d4f;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .organizer .container {
