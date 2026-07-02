@@ -457,7 +457,7 @@ white-space: nowrap;        /* запрещает перенос по слова
     top: 27%;          /* чуть выше? центра – регулируйте под свой макет */
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 95%;              /* занимает 85% ширины контейнера */
+    width: 95%;              /* занимает 95% ширины контейнера */
     max-width: 500px;        /* не шире 500px на больших экранах */
     color: black;    /* или другой контрастный цвет */
     font-family: "Poiret One", sans-serif;
@@ -469,17 +469,30 @@ white-space: nowrap;        /* запрещает перенос по слова
     pointer-events: none; /* чтобы клик проходил сквозь текст на картинку */
     z-index: 2;        /* выше картинок, но ниже круга? можно выше, но круг z-index:1, зададим 2 */
 line-height: 1.4;
+/*Чтобы текст плавно появлялся после планвного появления фона*/
+ opacity: 0;
+    transition: opacity 0.8s ease 0.8s; /* задержка 0.8с = время появления контейнера */
+    /* остальные ваши стили (position, top, left, transform, font и т.д.) остаются без изменений */
     
+}
+/* Когда контейнер полностью появился (класс .show) – текст появляется с задержкой */
+.suitcase-container.show .suitcase-text {
+    opacity: 1;
+}
+/* Когда чемодан открыт (класс .is-open) – текст исчезает мгновенно (без задержки) */
+.suitcase-container.is-open .suitcase-text {
+    opacity: 0;
+    transition-delay: 0s; /* отключаем задержку, чтобы текст сразу пропадал */
 }
 
 /* Когда чемодан закрыт (класс is-open отсутствует) – показываем текст */
-.suitcase-container:not(.is-open) .suitcase-text {
+/*.suitcase-container:not(.is-open) .suitcase-text {
     opacity: 1;
-}
+}*/
 
-.suitcase-container.is-open .suitcase-text {
-    opacity: 0;  /* или display: none, но с opacity плавнее */
-}
+/*.suitcase-container.is-open .suitcase-text {
+    opacity: 0; 
+}*/
 
 /* Блок референсов – изначально скрыт */
 .dresscode-references {
