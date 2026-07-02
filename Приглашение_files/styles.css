@@ -45,7 +45,7 @@
 }
 
 #preloader {
-   /* touch-action: pan-y;*/
+    touch-action: pan-y;
     background-color: pink;          /* запасной фон */
     background-image: url('fon.png');
     background-size: cover;
