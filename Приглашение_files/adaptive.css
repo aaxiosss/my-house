@@ -1,16 +1,10 @@
 @media (max-width: 1024px) {
-    .container {
-        max-width: 950px;
-
-    }
+    .container { max-width: 950px; }
 }
 
 @media (max-width: 768px) {
-    .container {
-        max-width: 600px;
-    }
-
-      .dresscode-references {
+    .container { max-width: 600px; }
+    .dresscode-references {
         top: 16%;
         width: 90%;
     }
@@ -21,11 +15,35 @@
     .strelka-text {
         font-size: 16px;
     }
-}
-.location-images img {
-    flex-shrink: 0;
-    min-width: 300px;
-    height: 370px;
+    
+/* Стили для локации на планшетах */
+    .location-images img {
+        flex-shrink: 0;
+        min-width: 300px;
+        height: 370px;
+    }
+    
+    /* Программа дня – переключаем на вертикальный список */
+    .event {
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .time-info {
+        text-align: center;
+    }
+    .time-line-svg svg {
+        display: none; /* скрываем SVG на мобилках */
+    }
     
 /*.background-wrapper {
 padding: 384px 0 384px 0;
@@ -66,120 +84,74 @@ background-size: cover;
         font-size: 22px;
     }*/
 
-    .event {
-        position: relative; /* переключаем на потоковое расположение */
-        width: 100%;
-        margin-bottom: 30px;
-        left: auto !important;
-        right: auto !important;
-        top: auto !important;
-        bottom: auto !important;
-    }
-    .timeline {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .time-info {
-        text-align: center;
-    }
-    .time-line-svg svg {
-        display: none;    /* или оставить, но уменьшить */
-    }
-}
-
+/* Остальные блоки */
     .organizer-title {
         font-size: 36px;
         margin-bottom: 30px;
     }
-
     .organizer-text {
         font-size: 30px;
     }
-
     .organizer-name {
         font-size: 30px;
     }
-
     .organizer-phone {
         font-size: 36px;
     }
-
     .organizer a {
         font-size: 22px;
-        text-decoration: none;
-        outline: none;
-        color: #f8efea;
-        border: 2px solid #f8efea;
-        box-sizing: border-box;
         padding: 10px;
-        border-radius: 15px;
-        display: inline-block;
-        cursor: pointer;
-        text-transform: uppercase;
     }
-
-    .dresscode .container {
-
-    }
-
     .dresscode-title {
         font-size: 36px;
         margin-bottom: 30px;
-
     }
-
     .dresscode-info-text {
         font-size: 30px;
         max-width: 600px;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 10px;
     }
-
     .dresscode-info-block {
         width: 130px;
         height: 100px;
     }
-
     .wishes-title {
         font-size: 36px;
         margin-bottom: 30px;
         text-align: center;
     }
-
-
-
     .wishes-text {
         font-size: 30px;
         padding: 20px;
     }
-
     .presence-title {
         font-size: 36px;
         margin-bottom: 30px;
         text-align: center;
     }
-
     .presence-text {
         font-size: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 10px;
     }
+}
 /*ОТСТУУУУУУУППППП
     ОТСТУУУУУУУППППП
     ОТСТУУУУУУУППППП
     */
 }
 @media (max-width: 625px) {
-    .container {
-        max-width: 520px;
-    }
-
+    .container { max-width: 520px; }
     .location-images img {
-    flex-shrink: 0;
-    min-width: 300px;
-    height: 345px;
+        flex-shrink: 0;
+        min-width: 300px;
+        height: 345px;
+    }
+    .dresscode-info-block {
+        width: 80px;
+        height: 70px;
+    }
+}
 /*.background-wrapper {
 padding: 310px 0 310px 0;
 background-size: cover;    
@@ -202,22 +174,9 @@ background-size: cover;
         max-width: 90%;
     }*/
 
-    .dresscode-info-block {
-        width: 80px;
-        height: 70px;
-    }
-
-
-    
-
-}
-
 @media (max-width: 425px) {
-    .container {
-        max-width: 380px;
-    }
-
-.dresscode-references {
+    .container { max-width: 380px; }
+    .dresscode-references {
         top: 17%;
         width: 95%;
     }
@@ -229,12 +188,11 @@ background-size: cover;
         width: 60px;
         height: 25px;
     }
-}
-
-.location-images img {
-    flex-shrink: 0;
-    min-width: 200px;
-    height: 270px;
+    .location-images img {
+        flex-shrink: 0;
+        min-width: 200px;
+        height: 270px;
+    }
 /*.background-wrapper {
 padding: 212px 0 212px 0;
 background-size: cover;    
@@ -284,12 +242,6 @@ background-size: cover;
     /*.dear {
         font-size: 36px;
     }*/
-
-
-    .program-title p:not(.fonts) {
-        font-size: 22px;
-    }
-
 
     .organizer {
         padding: 70px 0 70px 0;
@@ -347,14 +299,12 @@ background-size: cover;
 }
 
 @media (max-width: 375px) {
-    .container {
-        max-width: 300px;
-    }
-    
+    .container { max-width: 300px; }
     .location-images img {
-    flex-shrink: 0;
-    min-width: 200px;
-    height: 200px;
+        flex-shrink: 0;
+        min-width: 200px;
+        height: 200px;
+    }
 /*.background-wrapper { 
        padding: 180px 0 180px 0;
     background-size: cover;
@@ -408,14 +358,6 @@ background-size: cover;
    /* .dear {
         font-size: 36px;
     }*/
-    .program-title p {
-        text-align: center;
-    }
-
-    .event .text {
-        font-size: 16px;
-    }
-
 
     .organizer-text {
         font-size: 22px;
@@ -464,9 +406,7 @@ background-size: cover;
 }
 
 @media (max-width: 320px) {
-    .container {
-        max-width: 280px;
-    }
+    .container { max-width: 280px; }
 /*.background-wrapper { 
        padding: 160px 0 160px 0;
     background-size: cover;
@@ -507,17 +447,6 @@ background-size: cover;
    /* .main-info-location a {
         font-size: 16px;
     }*/
-
-
-    .program-title {
-        padding: 50px 0 50px 0;
-    }
-
-    .program-title p {
-        text-align: center;
-        font-size: 30px;
-    }
-
     .organizer {
         padding: 50px 0 50px 0;
     }
