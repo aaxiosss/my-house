@@ -43,6 +43,17 @@
 .fonts {
     font-family: "Great Vibes", sans-serif;
 }
+/*для тацминга*/
+.hidden-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.hidden-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+/*для тайминга*/
 
 #preloader {
     touch-action: pan-y;
