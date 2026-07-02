@@ -66,7 +66,31 @@ function startConfetti() {
         }
     })();
 }
+// Observer для .hidden-right
+const hiddenRightElements = document.querySelectorAll(".hidden-right");
+const observerRight = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observerRight.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
 
+hiddenRightElements.forEach(el => observerRight.observe(el));
+
+// Observer для .hidden-left (если используете)
+const hiddenLeftElements = document.querySelectorAll(".hidden-left");
+const observerLeft = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observerLeft.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+hiddenLeftElements.forEach(el => observerLeft.observe(el));
 
 
 
