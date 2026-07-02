@@ -474,7 +474,7 @@ white-space: nowrap;        /* запрещает перенос по слова
 .suitcase-container {
     background-color: #003d4f;
     
-    /*background-image: url("4fon.png");*/
+  
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
     background-position: center;
     background-repeat: no-repeat;    /* не повторяет */
@@ -655,7 +655,7 @@ width: 100%;                   /* фиксированная ширина = 100%
 /*начал вставять локациюююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююю*/
 .location {
     background-color: #003d4f;
-    
+    flex-direction: column;   /* элементы выстраиваются сверху вниз */
     background-image: url("4fon.png");
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
     background-position: center;
