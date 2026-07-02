@@ -656,7 +656,7 @@ width: 100%;                   /* фиксированная ширина = 100%
 .location {
     background-color: #003d4f;
     
-    /*background-image: url("4fon.png");*/
+    background-image: url("4fon.png");
     background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
     background-position: center;
     background-repeat: no-repeat;    /* не повторяет */
