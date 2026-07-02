@@ -652,7 +652,64 @@ width: 100%;                   /* фиксированная ширина = 100%
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     transition: transform 0.2s;
 }
+/*начал вставять локациюююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююю*/
+.location {
+    background-color: #003d4f;
+    
+    /*background-image: url("4fon.png");*/
+    background-size: cover;          /* картинка покрывает всю область, сохраняя пропорции */
+    background-position: center;
+    background-repeat: no-repeat;    /* не повторяет */
+    width: 100%;              /* ширина 100% */
+    height: 100vh;            /* высота на весь экран */   
+    display: flex;
+    align-items: center;      /* выравнивание по вертикали */
+    justify-content: center;  /* выравнивание по горизонтали */
+    
+    font-family: "Caviar Dreams", sans-serif;
+    color: #002D39; /*цвет*/
+   
+    min-height: 100vh;        /* гарантия для мобильных браузеров */
+    box-sizing: border-box;
 
+    overflow: hidden;         /* чтобы ничего не вылезало */
+    position: relative;       /* для позиционирования дочерних элементов, если понадобится */
+    
+}
+
+.location-images {
+    
+
+width: 100%;                   /* фиксированная ширина = 100% родителя */
+    max-width: 100%;               /* ограничение, чтобы не вылезать */
+    overflow-x: auto;              /* включает прокрутку */
+    
+    display: flex;    /* чтобы ширина была по содержимому */
+    touch-action: pan-x; /* разрешает только горизонтальную прокрутку */
+    
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 20px;
+    cursor: grab;
+    
+   
+}
+
+.location-images::-webkit-scrollbar {
+    display: none;
+}
+
+.location-images img {
+    flex-shrink: 0;
+    min-width: 200px;
+    height: 350px;           /* увеличено */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.2s;
+}
+/*закончил локациююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююю*/
 /*.strelka-images img:hover {
     transform: scale(1.02);
 }
