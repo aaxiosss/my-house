@@ -42,7 +42,7 @@
         text-align: center;
     }
     .time-line-svg svg {
-        display: none; /* скрываем SVG на мобилках */
+        /*display: none; */
     }
     
 /*.background-wrapper {
