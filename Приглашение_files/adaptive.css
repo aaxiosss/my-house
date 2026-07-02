@@ -22,6 +22,10 @@
         font-size: 16px;
     }
 }
+.location-images img {
+    flex-shrink: 0;
+    min-width: 300px;
+    height: 370px;
     
 /*.background-wrapper {
 padding: 384px 0 384px 0;
@@ -171,6 +175,11 @@ background-size: cover;
     .container {
         max-width: 520px;
     }
+
+    .location-images img {
+    flex-shrink: 0;
+    min-width: 300px;
+    height: 345px;
 /*.background-wrapper {
 padding: 310px 0 310px 0;
 background-size: cover;    
@@ -221,7 +230,11 @@ background-size: cover;
         height: 25px;
     }
 }
-    
+
+.location-images img {
+    flex-shrink: 0;
+    min-width: 200px;
+    height: 270px;
 /*.background-wrapper {
 padding: 212px 0 212px 0;
 background-size: cover;    
@@ -337,6 +350,11 @@ background-size: cover;
     .container {
         max-width: 300px;
     }
+    
+    .location-images img {
+    flex-shrink: 0;
+    min-width: 200px;
+    height: 200px;
 /*.background-wrapper { 
        padding: 180px 0 180px 0;
     background-size: cover;
