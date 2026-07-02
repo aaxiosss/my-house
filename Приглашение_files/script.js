@@ -96,38 +96,39 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.querySelector(".wedding-form").addEventListener("submit", async function (e) {
-    e.preventDefault(); // Останавливаем стандартную отправку формы
-
-    // 🔹 ЗАМЕНИТЬ НА СВОИ ДАННЫЕ!
-    const TOKEN = "7644603205:AAHP68FDVDVowQhLnkeCxdqOR0565Pggtns";
-    const CHAT_ID = "390335723";
-    const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+document.querySelector(".wedding-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
 
     // Собираем данные из формы
     const formData = new FormData(this);
-    let message = "<b>Новая заявка на свадьбу 🎉</b>\n\n";
-
+    const data = {};
     for (let [key, value] of formData.entries()) {
-        message += `<b>${key}:</b> ${value}\n`;
+        // Если ключ уже существует – превращаем в массив (для чекбоксов)
+        if (data[key] && Array.isArray(data[key])) {
+            data[key].push(value);
+        } else if (data[key]) {
+            data[key] = [data[key], value];
+        } else {
+            data[key] = value;
+        }
     }
 
-    // Отправляем запрос в Telegram
-    const response = await fetch(API_URL, {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
-            chat_id: CHAT_ID,
-            text: message,
-            parse_mode: "HTML",
-        }),
-    });
+    // Отправляем на наш сервер (замените URL на свой)
+    try {
+        const response = await fetch('https://tall-plants-live.loca.lt/send-form', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
 
-    if (response.ok) {
-        alert("Форма успешно отправлена!");
-        this.reset(); // Очистка формы
-    } else {
-        alert("Ошибка при отправке. Попробуйте еще раз.");
+        if (response.ok) {
+            alert('Форма отправлена!');
+            this.reset();
+        } else {
+            alert('Ошибка. Попробуйте позже.');
+        }
+    } catch {
+        alert('Ошибка соединения. Проверьте интернет.');
     }
 });
 
