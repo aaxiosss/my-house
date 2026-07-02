@@ -880,6 +880,7 @@ width: 100%;                   /* фиксированная ширина = 100%
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poiret One", sans-serif;
 
 }
 .organizer .container {
