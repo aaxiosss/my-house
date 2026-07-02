@@ -247,22 +247,33 @@
           [ Анкета гостя ]
         </div>
         <div class="presence-text">
-            Пожалуйста подтвердите свое присутствие и ответьте на несколько вопросов до 7.06.2026.
+            Осенью вы уже сказали нам "ДА", теперь просим вас подтвердить своё присутствие в анкете, чтобы мы смогли всё предусмотреть. Ждём ваши ответы до 10 июля.
         </div>
 
         <form class="wedding-form">
-            <fieldset>
-                <legend>Присутствие на свадьбе</legend>
-                <label><input type="radio" name="attendance" value="yes" wfd-id="id0"> Я буду!</label>
-                <label><input type="radio" name="attendance" value="no" wfd-id="id1"> Я пидорас</label>
-            </fieldset>
-
+           
             <fieldset>
                 <legend>Имя и фамилия</legend>
-                <p class="des">Внесите свое имя. Если вы будете с парой или семьей, то внесите все имена</p>
                 <input type="text" name="fullname" placeholder="Введите имя" wfd-id="id2">
             </fieldset>
+            
+            <fieldset>
+                <legend>Планируете ли вы присутствовать на свадьбе?</legend>
+                <label><input type="radio" name="attendance" value="yes" wfd-id="id0">Да, с удовольствием!</label>
+                <label><input type="radio" name="attendance" value="no" wfd-id="id1"> К сожалению, не смогу</label>
+            </fieldset>
 
+             <fieldset>
+                <legend>Нужен ли вам трансфер до площадки? (с площади Ленина)?</legend>
+                <label><input type="radio" name="attendance" value="yes" wfd-id="id10">Да</label>
+                <label><input type="radio" name="attendance" value="no" wfd-id="id11">Доберусь самостоятельно</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Есть ли у вас аллергия на какие-либо продукты?“ Если да — напишите, на что именно. Это очень важно для нас: так мы точно знаем, как организовать питание</legend>
+                <input type="text" name="fullname" placeholder="Введите на что именно" wfd-id="id12">
+            </fieldset>
+            
             <fieldset>
                 <legend>Предпочтение по напиткам</legend>
                 <p class="des">Можно выбрать несколько вариантов</p>
@@ -270,9 +281,9 @@
                 <label><input type="checkbox" name="drink" value="red_wine" wfd-id="id4"> вино красное</label>
                 <label><input type="checkbox" name="drink" value="white_wine" wfd-id="id5"> вино белое</label>
                 <label><input type="checkbox" name="drink" value="cognac" wfd-id="id6"> коньяк</label>
-                <label><input type="checkbox" name="drink" value="whiskey" wfd-id="id7"> виски(не наливаем)</label>
-                <label><input type="checkbox" name="drink" value="vodka" wfd-id="id8"> водка(лучше самогон бабушкин)</label>
-                <label><input type="checkbox" name="drink" value="no_alcohol" wfd-id="id9"> не пью(пока что), что-нибудь безалкогольное(выкиньте и дайте самогона)</label>
+                
+                <label><input type="checkbox" name="drink" value="vodka" wfd-id="id8"> водка</label>
+                <label><input type="checkbox" name="drink" value="no_alcohol" wfd-id="id9">безалкогольные напитки</label>
             </fieldset>
 <!--            <fieldset>-->
 <!--                <legend>Есть ли у вас пожелания по организации свадьбы</legend>-->
