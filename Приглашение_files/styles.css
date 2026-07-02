@@ -718,52 +718,101 @@ width: 100%;                   /* фиксированная ширина = 100%
     transition: transform 0.2s;
 }
 /*закончил локациююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююю*/
-/*.strelka-images img:hover {
-    transform: scale(1.02);
-}
-
-.strelka-images.active {
-    cursor: grabbing;
-}*/
-
-/*.program-title p{
-    font-size: 48px;
-}
-
-.program-title p:not(.fonts) {
-    font-size: 40px;
-    margin-top: 20px;
-    max-width: 500px;
-}*/
-
+/*Начал пилить программу дняяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя*/
 .program {
-    padding: 70px 0 70px 0;
-    background-color: #f8efea;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.program .container {
+    text-align: center;
+    position: relative; /* чтобы внутри можно было позиционировать абсолютно */
+}
+
+.program-title {
+    position: relative;
+    z-index: 2;
+}
+
+.time-line-svg {
+    position: relative;
+    width: 100%;
+}
+
+.time-line-svg svg {
+    width: 100%;
+    height: auto;         /* или задайте фиксированную высоту, например 800px */
+    display: block;
 }
 
 .timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
+    position: relative;
+    width: 100%;
+    height: 100%;         /* чтобы дочерние absolute позиционировались внутри */
 }
+
+/* Общие стили для каждого события */
 .event {
-    display: flex;
-    gap: 50px;
-}
-.event .time {
-    font-size: 40px;
+    position: absolute;
+    width: 220px;          /* ширина блока с текстом */
 }
 
-.event .description {
-    font-size: 48px;
-}
-.event .text {
-    font-size: 24px;
+.event .time-info {
+    width: 100%;
+    text-align: left;      /* или center, как вам нравится */
 }
 
+.time-info-time {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Felidae", sans-serif;
+}
+
+.description {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: "Felidae", sans-serif;
+    font-weight: bold;
+}
+
+.description span {
+    font-weight: bold;
+    font-size: 23px;
+    font-family: "Felidae", sans-serif;
+}
+
+.time-info a {
+    text-decoration: none;
+    color: #57524e;
+    font-weight: bold;
+}
+
+/* Позиционирование 4 событий */
+.event-one {
+    top: 80px;            /* отступ сверху */
+    left: 60px;           /* слева */
+}
+
+.event-two {
+    top: 280px;           /* чуть ниже */
+    right: 60px;          /* прижимаем к правому краю */
+    left: auto;           /* отключаем left */
+}
+
+.event-three {
+    bottom: 160px;        /* отступ снизу */
+    left: 60px;
+}
+
+.event-four {
+    bottom: 40px;         /* почти внизу */
+    right: 60px;
+    left: auto;
+}
+
+/*Закончил вставлять таймингггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггггг*/
 .organizer {
     padding: 100px 0 100px 0;
     background-color: #003d4f;
