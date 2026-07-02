@@ -27,7 +27,7 @@ document.querySelector('.open-btn').addEventListener('click', () => {
 function loadMusic() {
     audio.play().then(() => {
         if (!isStarted) {
-            audio.currentTime = 10; // опционально
+            audio.currentTime = 0; // опционально
             isStarted = true;
         }
         if (musicToggle) {
