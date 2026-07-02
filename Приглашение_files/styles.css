@@ -935,7 +935,9 @@ width: 100%;                   /* фиксированная ширина = 100%
 
 .presence {
     padding: 100px 0 100px 0;
-    background-image: url("images/background.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .presence-title {
